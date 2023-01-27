@@ -79,8 +79,76 @@
 # set comprehension method
 #          ||
 #         VVVV
-nums = [1, 1, 2, 3, 4, 5, 6, 7, 4, 3, 2, 6, 5, 5, 4, 2, 3]
+# nums = [1, 1, 2, 3, 4, 5, 6, 7, 4, 3, 2, 6, 5, 5, 4, 2, 3]
 
-my_set = {n for n in nums}
+# my_set = {n for n in nums}
 
-print(my_set)
+# print(my_set)
+
+#               Generator Expressions
+
+# Checkout how generator Expressions work normally.
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# def gen_Exp(data):
+#     for n in data:
+#         yield n * n
+
+
+# my_gen = gen_Exp(nums)
+
+# print(list(my_gen))
+
+
+#           Print Output:
+#           [1, 4, 9, 16, 25, 36, 49, 64, 81]
+#           Variables:
+#           -{
+#               my_gen: -{
+#                   py/object: "builtins.generator"
+#               },
+#               nums: -[
+#                   1,
+#                   2,
+#                   3,
+#                   4,
+#                   5,
+#                   6,
+#                   7,
+#                   8,
+#                   9
+#               ]
+#           }
+
+
+# Checkout how generator Expressions works using Comprehension.
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# gen_comp = (n * n for n in nums)
+
+
+# print(list(gen_comp))
+
+
+#             Print Output:
+#             [1, 4, 9, 16, 25, 36, 49, 64, 81]
+#             Variables:
+#             -{
+#                 gen_comp: -{
+#                     py/object: "builtins.generator"
+#                 },
+#                 nums: -[
+#                     1,
+#                     2,
+#                     3,
+#                     4,
+#                     5,
+#                     6,
+#                     7,
+#                     8,
+#                     9
+#                 ]
+#             }
+#             0 ms
