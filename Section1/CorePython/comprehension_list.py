@@ -33,3 +33,14 @@
 # my_list = [(letter, num) for letter in 'abcd' for num in range(4)]
 # print(my_list)
 
+#           The Zip Function
+
+# zip() - The zip function combines two different arrays in a single zip object, Then you have to typecast the result into a tuple.
+#               Syntax
+
+# name = ['Jude', 'jane', 'clark']
+# surname = ['wayne', 'john', 'superman']
+
+# result = zip(name, surname)
+
+# print(tuple(result))
