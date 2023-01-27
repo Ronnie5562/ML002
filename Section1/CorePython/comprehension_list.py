@@ -33,7 +33,7 @@
 # my_list = [(letter, num) for letter in 'abcd' for num in range(4)]
 # print(my_list)
 
-#               Example 4
+#              dictionary Comprehensions
 
 #           The Zip Function
 
@@ -62,3 +62,7 @@
 #          ||
 #         VVVV
 
+# names = ['Jude', 'jane', 'clark', 'peter']
+# surnames = ['wayne', 'john', 'superman', 'Oyonda']
+
+# my_dict = {name: surname for name, surname in zip(names, surnames) if name != 'peter'}
