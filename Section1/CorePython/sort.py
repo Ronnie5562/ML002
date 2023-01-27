@@ -37,11 +37,17 @@ E4 = Employee('Frank', 22, 'Back-end Engineer', 110000)
 
 Employees_list = [E1, E2, E3, E4]
 
+# option 1
+# def Esort(Employee):
+#     return Employee.name
 
-def Esort(Employee):
-    return Employee.name
+#Sorted_list = sorted(Employees_list, key=Esort)
+
+# option 2
+# we can also import attrgetter from operator module 
+# from operator import attrgetter
+
+# Sorted_list = sorted(Employees_list, key=attrgetter('salary'))
 
 
-Sorted_list = sorted(Employees_list, key=Esort)
-
-print(Sorted_list)
+# print(Sorted_list) 
