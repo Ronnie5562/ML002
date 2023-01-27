@@ -15,3 +15,33 @@
 #|_________________.sort()________________ |_____________sorted()___________________|
 #| It returns None                         | It returns a new list                  |
 #| It is peculiar to only list             | It can be used on tuples and dictionary|
+# The sorted() function can work on a dictionary, but it will only return the keys and not the values.
+
+#                     USING A KEY TO SORT OUT DATA
+
+class Employee:
+    def __init__(self, name, age, position, salary):
+        self.name = name
+        self.age = age
+        self.position = position
+        self.salary = salary
+
+    def __repr__(self):
+        return f'({self.name}, {self.age}, {self.position}, ${self.salary})'
+
+
+E1 = Employee('Ronald', 17, 'Machine Learning Engineer', 100000)
+E2 = Employee('Henry', 26, 'Front-end Engineer', 70000)
+E3 = Employee('James', 30, 'Machine Learning Engineer', 500000)
+E4 = Employee('Frank', 22, 'Back-end Engineer', 110000)
+
+Employees_list = [E1, E2, E3, E4]
+
+
+def Esort(Employee):
+    return Employee.name
+
+
+Sorted_list = sorted(Employees_list, key=Esort)
+
+print(Sorted_list)
