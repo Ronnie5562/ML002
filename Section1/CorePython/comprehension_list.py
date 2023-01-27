@@ -58,7 +58,7 @@
 # print(my_dict)
 
 
-# list comprehension method
+# dictinary comprehension method
 #          ||
 #         VVVV
 
@@ -66,3 +66,21 @@
 # surnames = ['wayne', 'john', 'superman', 'Oyonda']
 
 # my_dict = {name: surname for name, surname in zip(names, surnames) if name != 'peter'}
+
+#                   set Comprehensions
+# nums = [1, 1, 2, 3, 4, 5, 6, 7, 4, 3, 2, 6, 5, 5, 4, 2, 3]
+
+# my_set = set()
+
+# for n in nums:
+#     my_set.add(n)
+# print(my_set)
+
+# set comprehension method
+#          ||
+#         VVVV
+nums = [1, 1, 2, 3, 4, 5, 6, 7, 4, 3, 2, 6, 5, 5, 4, 2, 3]
+
+my_set = {n for n in nums}
+
+print(my_set)
