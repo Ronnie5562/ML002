@@ -34,3 +34,11 @@ import os
 
 #mod_time = os.stat(os.getcwd()).st_mtime
 #print(datetime.fromtimestamp(mod_time))
+
+#To print out all the sub_directories and files at all levels inside a particular directory
+
+# for dirpath, dirnames, filenames in os.walk(os.getcwd()):
+#     print(dirpath)
+#     print(dirnames)
+#     print(filenames)
+#     print()
