@@ -1,6 +1,5 @@
-**<h2>•REQUIREMENTS FOR A TYPICAL MACHINE LEARNING JOB</h2>** </br>
-
->**<h3>Essential**</h3></br>
+**<h2>•REQUIREMENTS FOR A TYPICAL MACHINE LEARNING JOB</h2>**
+>**<h3>Essential**</h3>
 >• Bachelor’s/Master’s degree in Computer Science, Software Engineering or a relevant field where Software Engineering and/or Programming is a significant component.</br>
 >• Background of demonstrated excellence in Machine Learning and at least 5 years of experience in industry/university mentoring/facilitating Machine Learning courses and developing ML models.</br>
 >• Expertise in mathematical domains of Machine Learning such as Advanced Linear Algebra, Calculus, Multivariate and Bayesian Probability, Convolutions etc</br>
