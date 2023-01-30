@@ -54,3 +54,15 @@ print(time)
 #import pytz
 # for pz in pytz.all_timezones:
 #     print(pz)
+
+# To get the time for a particular location(timezone) use:
+# maputo = datetime.datetime.now(tz=pytz.timezone('Africa/maputo'))
+# print(maputo)
+
+# For US/mountain
+# US_mountain = datetime.datetime.now(tz=pytz.timezone('US/mountain'))
+# print(US_mountain)
+
+# For Lagos
+# Lagos = datetime.datetime.now(tz=pytz.timezone('Africa/Lagos'))
+# print(Lagos)
