@@ -42,3 +42,6 @@ import os
 #     print(dirnames)
 #     print(filenames)
 #     print()
+
+
+# print(os.path.isdir('/Section1/CorePython/'))
