@@ -1,4 +1,4 @@
-#To get a file object we can use the built in [open('the_path_of_the_file')] command.
+# To get a file object we can use the built in [open('the_path_of_the_file')] command.
 # f = open('File_objects.py', 'r')
 
 # print(f.name)
@@ -28,4 +28,16 @@
 #     p_content = p.read(100)
 #     print(p_content)
 
-#NOTE: .seek(int) takes us back to the word with the index of the argument - (int). i.e seek(0) takes us back to the beginning of the file.
+# NOTE: .seek(int) takes us back to the word with the index of the argument - (int). i.e seek(0) takes us back to the beginning of the file.
+
+# To write into files
+# with open('test_1.txt', 'w') as W:
+#     W.write('YELLO')
+#     W.seek(0)
+#     W.write('H')
+
+#To copy the content in a file and paste it in another file.
+# with open('test_1.txt', 'r') as RF:
+#     with open('test_cp.txt', 'w') as RFC:
+#         for line in RF:
+#             RFC.write(line)
