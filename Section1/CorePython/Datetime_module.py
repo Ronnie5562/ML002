@@ -66,3 +66,18 @@ print(time)
 # For Lagos
 # Lagos = datetime.datetime.now(tz=pytz.timezone('Africa/Lagos'))
 # print(Lagos)
+
+# Use the method {.strftime()} on the above to format your date andgit time.
+#The {.strftime()} method takes in some arguments. Check the python documentation for those argument specifiers.
+# Examples of the argument specifiers are 
+# [
+#   %B - To display the year.
+#   %B - To display the month.
+#   %d - To display the day.
+# ]
+# SYNTAX ==>>
+# Djibouti = datetime.datetime.now(tz=pytz.timezone('Africa/Djibouti'))
+
+# print(Djibouti.strftime('%d of %B, %Y'))  
+    #Prints Output:
+    # 30 of January, 2023
