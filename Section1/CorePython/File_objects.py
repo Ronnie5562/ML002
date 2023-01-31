@@ -41,3 +41,10 @@
 #     with open('test_cp.txt', 'w') as RFC:
 #         for line in RF:
 #             RFC.write(line)
+
+# To make copies of images
+# Notice the 'b' beside the 'r' and 'w' - it represents bytes. To work with pictures, we have to work on it from the byte level.
+# with open('library_eggshell.webp', 'rb') as PB:
+#     with open('image_copy.pdf', 'wb') as PBCP:
+#         for bytes in PB:
+#             PBCP.write(bytes)
