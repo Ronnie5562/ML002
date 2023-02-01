@@ -45,3 +45,10 @@ import os
 
 
 # print(os.path.isdir('/Section1/CorePython/'))
+
+#To change the format of a new file
+
+# with open(name_of_file_to_be_changed, 'rb') as Fp:
+#     with open(name_of_file_to_be_created.The_new_format, 'wb') as Cp:
+#         for bytes in Fp:
+#             Cp.write(bytes)
