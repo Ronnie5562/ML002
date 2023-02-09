@@ -1,4 +1,5 @@
-__________Write a program for the following requirement__________
+_________________________________________________________________________________________________________________________________
+___________________ {Write a program for the following requirement} ___________________
 input: a4b3c2
 output: aaaabbbcc
 
@@ -12,9 +13,9 @@ for item in Entry:
     else:
         previous = item
 print(output)
-___________________________________________________
+_________________________________________________________________________________________________________________________________
 
-___________Write a program to sort the characters of the string and first alphabet symbols__________
+___________________ {Write a program to sort the characters of the string and first alphabet symbols} ___________________
 followed by numeric values
 input: B4A1D3
 Output: ABD134
@@ -33,9 +34,9 @@ for x in sorted_let:
 for x in sorted_num:
     result += x
 print(result)
-____________________________________________________________
+_________________________________________________________________________________________________________________________________
 
-Write a program to perform the following activity
+___________________ {Write a program to perform the following activity} ___________________
 input: a4k3b2
 output:aeknbd
 
@@ -49,3 +50,16 @@ for item in Entry:
         result += item
         previous = item
 print(result)
+_________________________________________________________________________________________________________________________________
+
+___________________ {Write a program to remove duplicate characters from the given input string?} ___________________
+input: ABCDABBCDABBBCCCDDEEEF
+output: ABCDEF
+
+Entry = input('Enter: ')
+result = ''
+for item in Entry:
+    if item not in result:
+        result += item
+print(result)
+_________________________________________________________________________________________________________________________________
