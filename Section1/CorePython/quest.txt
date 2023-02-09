@@ -13,3 +13,24 @@ for item in Entry:
         previous = item
 print(output)
 ___________________________________________________
+
+___________Write a program to sort the characters of the string and first alphabet symbols__________
+followed by numeric values
+input: B4A1D3
+Output: ABD134
+
+string =input("Enter Some String: ")
+letters = numbers = result = ''
+for char in string:
+    if char.isalpha():
+        letters += char
+    if char.isdigit():
+        numbers += str(char)
+sorted_let = sorted(letters)
+sorted_num = sorted(numbers)
+for x in sorted_let:
+    result += x
+for x in sorted_num:
+    result += x
+print(result)
+____________________________________________________________
