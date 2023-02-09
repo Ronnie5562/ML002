@@ -1,0 +1,15 @@
+__________Write a program for the following requirement__________
+input: a4b3c2
+output: aaaabbbcc
+
+
+Entry = input('Enter: ')
+output = ''
+previous = ''
+for item in Entry:
+    if item.isdigit():
+        output += previous * int(item)
+    else:
+        previous = item
+print(output)
+___________________________________________________
