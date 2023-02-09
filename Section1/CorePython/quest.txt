@@ -34,3 +34,18 @@ for x in sorted_num:
     result += x
 print(result)
 ____________________________________________________________
+
+Write a program to perform the following activity
+input: a4k3b2
+output:aeknbd
+
+Entry = input('Enter: ')
+previous = ''
+result = ''
+for item in Entry:
+    if item.isdigit():
+        result += chr(ord(previous) + int(item))
+    else:
+        result += item
+        previous = item
+print(result)
