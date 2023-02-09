@@ -1,4 +1,5 @@
 _________________________________________________________________________________________________________________________________
+
 ___________________ {Write a program for the following requirement} ___________________
 input: a4b3c2
 output: aaaabbbcc
@@ -62,4 +63,20 @@ for item in Entry:
     if item not in result:
         result += item
 print(result)
+_________________________________________________________________________________________________________________________________
+
+___________________ {Write a program to find the number of occurrences of each character present in the} ___________________
+given String?
+input: ABCABCABBCDE
+output: A-3,B-4,C-3,D-1,E-1
+s=input("Enter the Some String:")
+d={}
+for x in s:
+if x in d.keys():
+d[x]=d[x]+1
+else:
+d[x]=1
+for k,v in d.items():
+print("{} = {} Times".format(k,v))
+
 _________________________________________________________________________________________________________________________________
