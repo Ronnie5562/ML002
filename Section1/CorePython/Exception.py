@@ -29,3 +29,18 @@
 #     print(f.read())
 #     f.close()
 #     print(f.closed)
+
+# With the "finally-block" ==> [irrespective of what happens[error or noError] in the try-block the program runs the code in the finally-block]
+
+try:
+    f = open('./Calc.py')
+except FileNotFoundError as NOTFOUND:
+    print(NOTFOUND)
+except Exception as UNKNOWNERROR:
+    print(UNKNOWNERROR)
+else:
+    print(f.read())
+    f.close()
+    print(f.closed)
+finally:
+    print('I will run no matter what happens up there hahaha!!😂😂😂😂😂😂')
