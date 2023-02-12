@@ -32,15 +32,27 @@
 
 # With the "finally-block" ==> [irrespective of what happens[error or noError] in the try-block the program runs the code in the finally-block]
 
+# try:
+#     f = open('./Calc.py')
+# except FileNotFoundError as NOTFOUND:
+#     print(NOTFOUND)
+# except Exception as UNKNOWNERROR:
+#     print(UNKNOWNERROR)
+# else:
+#     print(f.read())
+#     f.close()
+#     print(f.closed)
+# finally:
+#     print('I will run irrespective of what happens up there hahaha!!😂😂😂😂😂😂')
+
+
+# To manually raise an Error
 try:
     f = open('./Calc.py')
+    raise Exception
 except FileNotFoundError as NOTFOUND:
     print(NOTFOUND)
-except Exception as UNKNOWNERROR:
-    print(UNKNOWNERROR)
-else:
-    print(f.read())
-    f.close()
-    print(f.closed)
+except Exception:
+    print('Custom Error')
 finally:
     print('I will run irrespective of what happens up there hahaha!!😂😂😂😂😂😂')
