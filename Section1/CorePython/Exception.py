@@ -43,4 +43,4 @@ else:
     f.close()
     print(f.closed)
 finally:
-    print('I will run no matter what happens up there hahaha!!😂😂😂😂😂😂')
+    print('I will run irrespective of what happens up there hahaha!!😂😂😂😂😂😂')
