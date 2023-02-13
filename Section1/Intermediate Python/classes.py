@@ -22,3 +22,8 @@ emp_2 = Employee('Test', 'Employee', 60000)
 print(emp_1.email)
 
 # In the example above {Employee} is the class and both {emp_1} and {emp_2} are the instances[objects] of the Employee class.
+
+# When you run :
+            # {   print(emp_1.fullname())  } 
+# on your computer, Here is what happens under the hood: 
+            # {  print(Employee.fullname(emp_1))}
