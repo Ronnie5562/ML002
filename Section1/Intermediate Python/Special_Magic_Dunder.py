@@ -53,4 +53,4 @@ print(names.__len__())
 num = 1
 print(num.__add__(2))
 
-# NOTE: In python, all in-built functions possess an underhood dunder method.
+# NOTE: In python, all in-built functions possess an underhood Dunder/Magic method.
