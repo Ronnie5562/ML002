@@ -11,13 +11,11 @@
 def greet(name):
     print(f'hello {name}')
 
-
 greeting = greet
 
 greeting('Star Boy')
 
 # 2. Passing a function as an argument:
-
 
 def apply(func, value):
     return func(value)
@@ -27,3 +25,27 @@ def double(num):
 
 result = apply(double, 5)
 print(result)
+
+# 3. Returning a function from a function:
+
+def create_multiplier(factor):
+    def multiplier(num):
+        return num * factor
+    return multiplier
+
+double2 = create_multiplier(2)
+triple = create_multiplier(3)
+
+print(double2(5))  # Output: 10
+print(triple(5))  # Output: 15
+
+def outer(fac):
+    def inner(num):
+        return fac * num
+    return inner
+
+ans = outer(10)
+
+print(ans(15))
+
+# In summary, first-class functions in Python allow for more flexible and expressive code, making it easier to write reusable and composable code.
