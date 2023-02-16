@@ -49,3 +49,28 @@ ans = outer(10)
 print(ans(15))
 
 # In summary, first-class functions in Python allow for more flexible and expressive code, making it easier to write reusable and composable code.
+
+# More Examples
+
+
+def html_tag(tag):
+    def html_content(content):
+        print(f'<{tag}>{content}<{tag}>')
+    return html_content
+
+
+html_h1 = html_tag('h1')
+html_h1('Hello')
+
+
+def mr_or_mrs(title):
+    def your_name(name):
+        print(f'{title} {name}')
+    return your_name
+
+
+Mrs = mr_or_mrs('Mrs')
+Mrs('Bamidele')
+
+Mr = mr_or_mrs('Mr')
+Mr('Bamidele')
