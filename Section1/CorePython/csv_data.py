@@ -24,7 +24,7 @@ import csv
 #             csv_writer.writerow(line)
 
 
-# Code to prevent any entry with the firstname - {Tom} [Using  DictReader and DictWriter]
+# Code to prevent any entry with the firstname - {Tom} and after [Using  DictReader and DictWriter]
 
 # with open('data.csv') as csv_file:
 #     csv_reader = csv.DictReader(csv_file)
