@@ -54,3 +54,7 @@ num = 1
 print(num.__add__(2))
 
 # NOTE: In python, all in-built functions possess an underhood Dunder/Magic method.
+a = [1, 2, 3, 4, 5]
+
+
+print(a.__len__())
