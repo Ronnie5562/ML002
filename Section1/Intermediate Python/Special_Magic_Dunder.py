@@ -45,16 +45,19 @@ print(emp_1_1.Employees)
 for employ in emp_1.Employees:
     print(employ.fullname())
 
+print('____________________')
+print(str(emp_1))
+print(repr(emp_1))
 
-# Inbuilt dunder methods.
-print(emp_1_1.__add__(emp_1_2))
-names = [1, 2, 3, 4, 5, 6, 7]
-print(names.__len__())
-num = 1
-print(num.__add__(2))
+# # Inbuilt dunder methods.
+# print(emp_1_1.__add__(emp_1_2))
+# names = [1, 2, 3, 4, 5, 6, 7]
+# print(names.__len__())
+# num = 1
+# print(num.__add__(2))
 
-# NOTE: In python, all in-built functions possess an underhood Dunder/Magic method.
-a = [1, 2, 3, 4, 5]
+# # NOTE: In python, all in-built functions possess an underhood Dunder/Magic method.
+# a = [1, 2, 3, 4, 5]
 
 
-print(a.__len__())
+# print(a.__len__())
