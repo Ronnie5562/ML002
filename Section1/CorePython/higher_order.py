@@ -50,3 +50,23 @@ family_surname = 'Elon'
 names_with_surname = list(map(lambda name: f'{family_surname} {name}', family_members))
 
 print(names_with_surname)
+
+#We can apply map() function on multiple lists also.But make sure all list should have same length.
+#Syntax: 
+# map(lambda x, y: x*y, l1, l2))
+#     x is from l1 and y is from l2
+#     Eg:
+
+l1= [1, 2, 3, 4]
+l2= [2, 3, 4, 5]
+l3 = list(map(lambda x, y: x*y, l1, l2))
+print(l3)  # [2, 6, 12, 20]
+
+
+list1 = [1,2,3,4,5]
+list2 = [6,7,8,9,10]
+list3 = [11, 12, 13, 14, 15]
+
+mul_list = list(map(lambda x, y, z: x * y * z, list1, list2, list3))
+
+print(mul_list)
