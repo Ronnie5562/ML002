@@ -42,3 +42,11 @@ numbers = [1,2,3,4,5,6,7,8]
 new_numbers = list(map(lambda x : x * x, numbers))
 
 print(new_numbers)
+
+# Python code to join each family members' name with the family surname
+family_members = ['johnson', 'mira', 'anabel', 'faith', 'jude', 'gabriel']
+family_surname = 'Elon'
+
+names_with_surname = list(map(lambda name: f'{family_surname} {name}', family_members))
+
+print(names_with_surname)
