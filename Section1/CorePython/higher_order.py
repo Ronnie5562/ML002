@@ -83,7 +83,13 @@ from functools import *
 
 stuff = [10, 20, 30, 40, 50]
 
-result = reduce(lambda x, y: x + y, stuff)
+reduce_add_all = reduce(lambda x, y: x + y, stuff)
 
-print(result)
+print(reduce_add_all)
+
+stuff2 = [10, 20, 30, 40, 50]
+
+reduce_mul_all = reduce(lambda x, y : x * y, stuff2)
+
+print(reduce_mul_all)
 
