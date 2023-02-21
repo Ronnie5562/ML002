@@ -70,3 +70,20 @@ list3 = [11, 12, 13, 14, 15]
 mul_list = list(map(lambda x, y, z: x * y * z, list1, list2, list3))
 
 print(mul_list)
+
+# reduce() function:
+# reduce() function reduces sequence of elements into a single element by applying the
+# specified function.
+# reduce(function, sequence)
+# reduce() function present in functools module and hence we should write import
+# statement.
+# Eg:
+
+from functools import *
+
+stuff = [10, 20, 30, 40, 50]
+
+result = reduce(lambda x, y: x + y, stuff)
+
+print(result)
+
