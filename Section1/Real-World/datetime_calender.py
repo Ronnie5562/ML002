@@ -60,4 +60,23 @@ print(end_date)
 print(f'Reached your goal in {(end_date - start_date).days // 7} weeks')
 
 
-#
+# write a script that shows how long it takes a youtuber to reach his total number of subscribers goal
+
+import datetime
+import math
+
+goal_sub = 100000
+current_sub = 75000
+
+subs_to_go = goal_sub - current_sub
+
+avg_subs_per_day = 200
+
+days_to_go = math.ceil(subs_to_go / avg_subs_per_day)
+
+today = datetime.date.today()
+
+end_date = today + datetime.timedelta(days=days_to_go)
+print()
+print('_______________________________________')
+print(end_date.strftime('%d %B, %Y'))
