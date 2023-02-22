@@ -1,0 +1,19 @@
+Duck Typing:
+
+Duck typing is a programming concept that is used in dynamically-typed languages, such as Python, Ruby, and JavaScript. The term "duck typing" comes from the phrase "if it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck." In other words, if an object can perform the required operations or methods, it is assumed to be of the required type, regardless of its actual type. This means that in duck typing, an object's type is determined by its behavior rather than its class or interface.
+
+The concept of duck typing is based on the idea that it is more important to focus on an object's behavior than on its actual type. This can be especially useful in dynamically-typed languages where objects can change types at runtime. By focusing on the behavior of an object, duck typing allows for more flexible and dynamic programming.
+
+One of the key advantages of duck typing is that it can simplify code and make it more readable. Because the focus is on an object's behavior, developers can write code that works with any object that provides the required behavior, rather than being tied to a specific class or interface. This can reduce the amount of boilerplate code and make code easier to maintain.
+
+However, duck typing does come with some risks. Because it relies on an object's behavior rather than its type, it can lead to runtime errors if an object does not provide the expected behavior. This can make it more difficult to debug code and can lead to unexpected behavior. Additionally, because duck typing allows for more flexible programming, it can make code harder to understand and maintain if not used carefully.
+
+Easier to Ask for Forgiveness than Permission:
+
+"Easier to ask for forgiveness than permission" is a programming principle that suggests that it is better to write code that assumes permission than to write code that explicitly asks for permission. In other words, it is better to try to perform an operation and handle any errors that occur than to check beforehand whether the operation is allowed.
+
+This principle is often used in situations where it is difficult or impractical to check permissions beforehand. For example, if a program needs to read or write to a file, it may be difficult to determine beforehand whether the user has the required permissions. Rather than checking permissions, the program might simply try to read or write the file and handle any errors that occur.
+
+The principle of "easier to ask for forgiveness than permission" can help simplify code and make it more flexible. By assuming permission, code can be written that works in a wide variety of situations, rather than being tied to specific permissions or configurations. This can reduce the amount of boilerplate code and make code easier to maintain.
+
+However, this principle also comes with some risks. Because it assumes permission rather than checking beforehand, it can lead to unexpected behavior or security vulnerabilities. For example, if a program assumes permission to access sensitive data and that data is exposed, it can lead to serious consequences. Additionally, because it assumes permission, it can make code harder to understand and maintain if not used carefully. Therefore, it is important to use this principle with caution and only in situations where it is appropriate.
