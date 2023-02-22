@@ -37,3 +37,27 @@ while balance > 0:
 
     days_in_current_month = calendar.monthrange(end_date.year, end_date.month)[1]
     end_date = end_date + datetime.timedelta(days=days_in_current_month)
+
+
+
+# Write a script that gets how many weeks it would take a person to loose a certain amoun of pounds
+import datetime
+
+current_weight = 200
+goal_weight = 130
+avg_lbs_week = 2
+
+start_date = datetime.date.today()
+end_date = start_date
+
+while current_weight > goal_weight:
+    end_date += datetime.timedelta(days=7)
+    current_weight -= avg_lbs_week
+
+print()
+print('________________________________________________')
+print(end_date)
+print(f'Reached your goal in {(end_date - start_date).days // 7} weeks')
+
+
+#
