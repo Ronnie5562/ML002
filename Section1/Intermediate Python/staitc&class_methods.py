@@ -70,9 +70,12 @@ emp_str_2 = 'Steve-Smith-30000'
 emp_str_3 = 'Jane-Doe-90000'
 
 new_emp_1 = Employee.from_string(emp_str_1)
+new_emp_2 = Employee.from_string(emp_str_2)
+new_emp_3 = Employee.from_string(emp_str_3)
 
 print(new_emp_1.email)
 print(new_emp_1.pay)
+print(Employee.num_of_emps)
 
 # static method 
 # In Python, a static method is a method that belongs to a class rather than an instance of the class. Static methods are defined using the @staticmethod decorator and
