@@ -13,6 +13,7 @@ import pip
 
 reload(pip)
 reload(pip)
+print(pip.__name__)
 
 # After using the reload() function, notice that ['Hello'] is printed three times in the terminal. One for the initial importation of the pip module [pip.py file in this directory] the other two is for the reload(pip) function.
 # The main advantage of explicit module reloading is we can ensure that updated version is always available to our program
