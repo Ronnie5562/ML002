@@ -18,7 +18,7 @@ def scope():
     print(y)
     print(z)
 
-# Without calling the scope function, { Z } remains local.
+# Without calling the scope function, { Z } remains local
 scope()
 
 print(x)
