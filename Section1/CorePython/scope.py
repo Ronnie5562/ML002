@@ -29,3 +29,15 @@ print(z)
 # To check all the built-in funcs and variables in python
 import builtins
 print(dir(builtins)) # output - All built-ins in python.
+
+# Enclosing scope
+
+def outer():
+    x = 'outer x'
+
+    def inner():
+        x = 'inner x'
+        print(x)
+    inner()
+    print(x)
+outer()
