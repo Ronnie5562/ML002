@@ -34,8 +34,11 @@ print(dir(builtins)) # output - All built-ins in python.
 
 def outer():
     x = 'outer x'
-
+    u = 'outer u'
     def inner():
+        # To create a variable that is global within the inner function and the outer function use: { nonlocal } key-word to craete the variable.
+        nonlocal u
+        u = 'nonlocal u'
         x = 'inner x'
         print(x)
     inner()
