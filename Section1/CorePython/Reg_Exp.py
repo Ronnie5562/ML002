@@ -61,9 +61,15 @@ print(new_text)
 # how to use them can be very beneficial for data cleaning, text processing, and more.
 
 
-# using .compile()
+# using .compile() and .finditer()
 
 compile_text = 'This text is a text that was texted to text him about a text that was texted on text day'
-compile_pattern = 'text'
 
-Text_filter = re.compile(compile_text, )
+
+compile_pattern = re.compile('text')
+Text_matches = compile_pattern.finditer(compile_text)
+
+print('______________________________________________')
+for match in Text_matches:
+    print(match)
+print('______________________________________________')
