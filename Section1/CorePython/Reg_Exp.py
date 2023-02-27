@@ -73,3 +73,46 @@ print('______________________________________________')
 for match in Text_matches:
     print(match)
 print('______________________________________________')
+
+
+text_to_search = '''
+abcdefghijklmnopqurtuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+1234567890
+
+Ha HaHa
+
+MetaCharacters (Need to be escaped):
+. ^ $ * + ? { } [ ] \ | ( )
+
+coreyms.com
+
+321-555-4321
+123.555.1234
+123*555*1234
+800-555-1234
+900-555-1234
+
+Mr. Schafer
+Mr Smith
+Ms Davis
+Mrs. Robinson
+Mr. T
+'''
+
+sentence = 'Start a sentence and then bring it to an end'
+
+pattern = re.compile(r'start', re.I)
+
+matches = pattern.search(sentence)
+
+print(matches)
+
+# code to match all the phone numbers inside the text_to_search variable above.add()
+# check th Reg_Exp.txt file to understand why we are using \d and . in the below.
+# The { r } inside the compile method, before the string represents raw string.
+num_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d')
+new_match = num_pattern.finditer(text_to_search)
+
+for match in new_match:
+    print(match)
