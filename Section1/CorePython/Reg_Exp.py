@@ -116,3 +116,16 @@ new_match = num_pattern.finditer(text_to_search)
 
 for match in new_match:
     print(match)
+
+
+# Write a code to parse out all the phone numbers in Reg_Exp_data.txt
+
+with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
+    file_data = file.read()
+
+    data_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+
+    Phone_book = data_pattern.finditer(file_data)
+
+    for numbers in Phone_book:
+        print(numbers)
