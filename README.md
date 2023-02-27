@@ -12,12 +12,10 @@
 >• Strong debugging skills in ML domain</br>
 >• Passionate</br>
 >• Experience designing experiential learning activities that promotes peer learning and collaboration</br>
->• Experience designing the complete structure and requirement of Student undergraduate Capstone Projects</br>
->• Excellent coaching and adequate computing skills with the ability to support students in both remote and in-person learning environments</br>
 >• Excellent communications (oral and written), interpersonal and presentation skills.</br>
 >• Excellent problem-solving skills with attention to detail.</br>
 >• Excellent time management skills with the ability to multitask, prioritise own work, and work independently.</br>
 >• The ability to quickly analyze data and determine the appropriate academic support intervention required by the student or to redirect to other teams.</br>
->• A startup mindset to help us scale the programme to the order of thousands of students in the next 12 months.</br>
+>• A startup mindset</br>
 >• A strong, customer-service ethos</br>
 >• An ability to work flexibly (for example at weekends)</br>
