@@ -44,3 +44,6 @@ def outer():
     inner()
     print(x)
 outer()
+
+import sys
+print(sys.executable)
