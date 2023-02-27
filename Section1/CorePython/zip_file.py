@@ -15,3 +15,10 @@ f.write('test.py')
 # The zipfile in this directory was created with the code above. It contains a copy of test.py which is also a file in this directory.
 f.close()
 print('The zipfile (files.zip) was successfully created!!!!!')
+
+# To perform unzip operation:
+# We have to create ZipFile object as follows
+# f = ZipFile("files.zip", "r", ZIP_STORED)
+# ZIP_STORED represents unzip operation. This is default value and hence we are not required to specify.
+# Once we created ZipFile object for unzip operation, we can get all file names present in that zip file by using namelist() method.
+# names = f.namelist()
