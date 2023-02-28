@@ -122,8 +122,10 @@ for match in new_match:
 
 with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
     file_data = file.read()
-
+    # The data_pattern below matches a number that has the format of -[3digits, any char, 3digits, any chat, 4digits]
     data_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+    # To specify a list of char the {any char} can be, we use a character set - [different_characters]
+    data_pattern = re.compile(r'\d\d\d[-]\d\d\d[-]\d\d\d\d')
 
     Phone_book = data_pattern.finditer(file_data)
 
