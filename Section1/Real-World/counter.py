@@ -9,6 +9,7 @@ print(payment_details.most_common()) # Prints the out in according to the number
 print(payment_details.most_common(1)) # Prints out the element that appears the most.
 
 
+# Write a python code that search for a word in a given text and returns the number of times that word appears.
 from collections import Counter
 def word_counter(data):
     with open('dummy.txt') as file:
