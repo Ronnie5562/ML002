@@ -137,6 +137,17 @@ with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
     name_pattern = re.compile(r'M(r|s|rs)\s[\w]*')
     
     matched_names = name_pattern.finditer(file_data)
+ 
+    for name in matched_names:
+        print(name)
+
+# To match all the emails in Reg_Exp_data.txt file.
+print('______________________________________________')
+with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
+    file_data = file.read()
+    name_pattern = re.compile(r'\w+@\w+\.\w+')
+    
+    matched_names = name_pattern.finditer(file_data)
 
     for name in matched_names:
         print(name)
