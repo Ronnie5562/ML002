@@ -151,3 +151,15 @@ with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
 
     for name in matched_names:
         print(name)
+
+# Working with groups [()] in RegExp
+
+
+with open('./Reg_Exp_data.txt') as file:
+    url_pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+    data = file.read()
+
+    urls = url_pattern.finditer(data)
+
+    for url in urls:
+        print(url.group(3))
