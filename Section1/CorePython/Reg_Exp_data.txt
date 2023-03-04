@@ -358,12 +358,12 @@ Sam Wilson
 557 Pearl St., Westworld KS 23225
 samwilson@bogusemail.com
 
-Charles Jones
+Mr Charles Jones
 922-555-1773
 855 Hill St., Olympus HI 81427
 charlesjones@bogusemail.com
 
-Laura Brown
+Ms Laura Brown
 711-555-4427
 980 Maple St., Smalltown MO 96421
 laurabrown@bogusemail.com
@@ -373,7 +373,7 @@ Tom Harris
 676 Hill St., Blackwater AR 96698
 tomharris@bogusemail.com
 
-Patricia Taylor
+Mrs Patricia Taylor
 852-555-6521
 588 Pine St., Olympus FL 98412
 patriciataylor@bogusemail.com
@@ -403,7 +403,7 @@ Linda Patterson
 736 Cedar St., Lakeview KY 47472
 lindapatterson@bogusemail.com
 
-Charles Davis
+Mr. Charles Davis
 789-555-7032
 678 Lake St., Mordor MN 11845
 charlesdavis@bogusemail.com
