@@ -30,3 +30,40 @@ print(next(my_iterator))  # Output: 3
 # my_iterator to get the next value in the sequence.
 
 # Note that if we try to call next() on the iterator after all the elements have been exhausted, it will raise the StopIteration exception.
+
+class MyRange:
+    def __init__(self, start, end):
+        self.value = start
+        self.end = end
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.value >= self.end:
+            raise StopIteration
+        current = self.value
+        self.value += 1
+        return current
+
+
+nem = MyRange(1, 10)
+
+for x in nem:
+    print(x)
+print('______________________________________________________')
+
+
+def my_range(start, end):
+
+    current = start
+    while start < end:
+        yield current
+        current += 1
+
+
+Mrange = my_range(1, 10)
+print(Mrange)
+
+for element in Mrange:
+    print(element)
