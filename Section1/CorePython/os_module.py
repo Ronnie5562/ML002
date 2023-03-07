@@ -52,3 +52,8 @@ import os
 #     with open(name_of_file_to_be_created.The_new_format, 'wb') as Cp:
 #         for bytes in Fp:
 #             Cp.write(bytes)
+
+# How to get information about a File:
+# We can get statistics of a file like size, last accessed time, last modified time etc by using
+# stat() function of os module.
+# stats = os.stat("os_module.py")
