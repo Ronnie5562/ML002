@@ -44,7 +44,3 @@ with open('new_states.json', 'w', encoding='UTF-8') as new_file:
     new_data = json.dump(states_list, new_file, indent=2)
 
 # The new_states.json file you see in this directory was created with the file above.
-
-
-
-# Now let us try to work with an API
