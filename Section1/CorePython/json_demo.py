@@ -31,3 +31,20 @@ print(new_string)
 
 
 # Loading a json file into a python code.
+# Check the code in states.json file before going through the following code. 
+
+with open('states.json', encoding='UTF-8') as file:
+    states_list = json.load(file)
+
+# Now, I want to pass the content of the states.json file into another file without the states code
+for state in states_list['states']:
+    del state['area_codes']
+
+with open('new_states.json', 'w', encoding='UTF-8') as new_file:
+    new_data = json.dump(states_list, new_file, indent=2)
+
+# The new_states.json file you see in this directory was created with the file above.
+
+
+
+# Now let us try to work with an API
