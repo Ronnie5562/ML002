@@ -41,6 +41,10 @@ class TestCalc(unittest.TestCase):
 
         # To run a test to if a specified error is raised, use the syntax below:
         self.assertRaises(ZeroDivisionError, calc.divide, 10, 0)
+        # We can also do the abaove using a context manager
+        with self.assertRaises(ZeroDivisionError):
+            calc.divide(10, 0)
+
 
 # To run the test, use: python -m unittest <name of the file>
 # To make the code run normally without using the script above, add the below to your program:

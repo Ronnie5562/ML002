@@ -3,18 +3,21 @@
 # real-world entity that has a state and behavior. When you create an object, you are creating a specific instance of a class, with its own values
 #  for attributes and methods.
 
-import random
+#import random
 class Employee:
 
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.email = f'{first}_{last}{random.randint(100, 999)}@email.com'
         self.pay = pay
 
+    @property
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
-
+    
+    @property
+    def email(self):
+        return f'{self.first}_{self.last}@email.com'
 
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
