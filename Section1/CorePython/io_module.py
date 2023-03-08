@@ -19,6 +19,9 @@ print(File_one.read())
 # Next, we move the cursor to the beginning of the buffer using the seek method, and then we read the contents of the buffer using the read method
 # and print it to the console. The output of the program is 'Hello, world!'.
 
-
+File_two = StringIO()
+File_two.write('This is so so amazing')
+File_two.seek(0)
+print(File_two.read())
 
 # IT WAS A GREAT EXPERIENCE LEARNING ABOUT THE {io} MODULE
