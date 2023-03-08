@@ -39,7 +39,23 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-10, -5), 2)
         self.assertEqual(calc.divide(5, 2), 2.5) # This will catch an error if we change the division sign to floor division in our actual file.
 
+        # To run a test to if a specified error is raised, use the syntax below:
+        self.assertRaises(ZeroDivisionError, calc.divide, 10, 0)
+
 # To run the test, use: python -m unittest <name of the file>
 # To make the code run normally without using the script above, add the below to your program:
 if __name__  == '__main__':
     unittest.main()
+
+
+# In Python's unittest framework, the order in which tests are run is determined by the test discovery process.
+
+# By default, the unittest framework discovers and runs tests in a deterministic order, which is usually alphabetical order based on the names of 
+# the test methods. However, the exact order of the tests may vary depending on the version of Python, the operating system, and other factors.
+
+# It's generally not recommended to rely on the specific order in which tests are run, as this can lead to fragile tests that fail unexpectedly if
+#  the order changes. Instead, each test should be designed to be independent of other tests and should set up its own test data if necessary.
+
+# That being said, if you do want to specify the order in which tests are run, you can use test suites to group tests together and run them in a 
+# specific order. You can also use the TestCase.addCleanup() method to specify cleanup code that will be run after each test method, regardless of 
+# whether the test passes or fails.
