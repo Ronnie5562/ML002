@@ -37,6 +37,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(10, 5), 2)
         self.assertEqual(calc.divide(-10, 5), -2)
         self.assertEqual(calc.divide(-10, -5), 2)
+        self.assertEqual(calc.divide(5, 2), 2.5) # This will catch an error if we change the division sign to floor division in our actual file.
 
 # To run the test, use: python -m unittest <name of the file>
 # To make the code run normally without using the script above, add the below to your program:
