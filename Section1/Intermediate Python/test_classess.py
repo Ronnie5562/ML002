@@ -42,7 +42,7 @@ class Testclasses(unittest.TestCase):
         
 
 
-
+print(dir(Testclasses)) # It contains the list of asserts you can use.
 
 if __name__ == '__main__':
     unittest.main()
