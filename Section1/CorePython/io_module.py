@@ -18,3 +18,7 @@ print(File_one.read())
 # In this example, we create an instance of StringIO called s, then we write the string 'Hello, world!' to the buffer using the write method. 
 # Next, we move the cursor to the beginning of the buffer using the seek method, and then we read the contents of the buffer using the read method
 # and print it to the console. The output of the program is 'Hello, world!'.
+
+
+
+# IT WAS A GREAT EXPERIENCE LEARNING ABOUT THE {io} MODULE
