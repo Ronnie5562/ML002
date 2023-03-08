@@ -4,6 +4,7 @@
 #  for attributes and methods.
 
 #import random
+import urllib.request
 class Employee:
 
     def __init__(self, first, last, pay):
@@ -18,7 +19,13 @@ class Employee:
     @property
     def email(self):
         return f'{self.first}_{self.last}@email.com'
-
+    
+    def monthly_schedule(self, month):
+        response = urllib.request.urlopen(f'http://company.com/{self.last}/{month}')
+        if response.ok:
+            return response.text
+        else:
+            return 'Bad Response'
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
 
