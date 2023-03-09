@@ -40,7 +40,9 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(5, 2), 2.5) # This will catch an error if we change the division sign to floor division in our actual file.
 
         # To run a test to if a specified error is raised, use the syntax below:
+        #assertRaises(exception, callable, *args, **kwds)
         self.assertRaises(ZeroDivisionError, calc.divide, 10, 0)
+        
         # We can also do the abaove using a context manager
         with self.assertRaises(ZeroDivisionError):
             calc.divide(10, 0)
@@ -49,7 +51,7 @@ class TestCalc(unittest.TestCase):
 # To run the test, use: python -m unittest <name of the file>
 # To make the code run normally without using the script above, add the below to your program:
 if __name__  == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
 
 
 # In Python's unittest framework, the order in which tests are run is determined by the test discovery process.
@@ -63,3 +65,5 @@ if __name__  == '__main__':
 # That being said, if you do want to specify the order in which tests are run, you can use test suites to group tests together and run them in a 
 # specific order. You can also use the TestCase.addCleanup() method to specify cleanup code that will be run after each test method, regardless of 
 # whether the test passes or fails.
+
+
