@@ -162,4 +162,4 @@ with open('./Reg_Exp_data.txt') as file:
     urls = url_pattern.finditer(data)
 
     for url in urls:
-        print(url.group(3))
+        print(url.group())

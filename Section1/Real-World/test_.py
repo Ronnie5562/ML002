@@ -35,3 +35,5 @@ class TestFib(unittest.TestCase):
 #The code above is run in the {test_for_test.py} file in this directory.
 
 # Study the output of this code to understand setUp and tearDown hierarchy
+print(TestFib.__class__.__name__)
+print()
