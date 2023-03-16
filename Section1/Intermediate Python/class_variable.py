@@ -56,3 +56,18 @@ emp_2 = Employee('Test', 'Employee', 60000)
 print(Employee.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
+
+# How to find the number of references of an object: sys module contains getrefcount() function for this purpose.
+# sys.getrefcount(objectreference)
+# Example:
+import sys
+class Test:
+    pass
+
+t1=Test()
+t2=t1
+t3=t1
+t4=t1
+print(sys.getrefcount(t1))
+
+# Note: For every object, Python internally maintains one default reference variable self
