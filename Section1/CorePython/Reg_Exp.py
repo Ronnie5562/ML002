@@ -15,7 +15,7 @@ text = "The quick brown fox jumps over the lazy dog"
 pattern = "quick"
 
 match = re.search(pattern, text)
-
+print(match)
 if match:
     print("Pattern found!")
 else:
@@ -102,13 +102,14 @@ Mr. T
 
 sentence = 'Start a sentence and then bring it to an end'
 
-pattern = re.compile(r'start', re.I)
+# The re.IGNORECASE makes the pattern case-insensitive
+pattern = re.compile(r'start', re.IGNORECASE)
 
 matches = pattern.search(sentence)
 
 print(matches)
 
-# code to match all the phone numbers inside the text_to_search variable above.add()
+# code to match all the phone numbers inside the text_to_search variable above.
 # check th Reg_Exp.txt file to understand why we are using \d and . in the below.
 # The { r } inside the compile method, before the string represents raw string.
 num_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d')

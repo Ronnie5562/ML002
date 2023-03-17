@@ -21,7 +21,7 @@ Quantifiers:
 *       - 0 or More - { Repetition }
 +       - 1 or More - { Repetition }
 ?       - 0 or One - To make something optional.
->->->-> NOTE: The question mark makes the preceding token in the regular expression optional. colou?r matches colour or color.
+>->->-> NOTE: The question mark makes the preceding token in the regular expression optional. colou?r matches colour or color. {i.e The 'u' is optional} 
 {3}     - Exact Number
 {3,4}   - Range of Numbers (Minimum, Maximum)
 n+	    - Matches any string that contains at least one n
