@@ -87,3 +87,31 @@ T = Timesheet('Ronald', 24)
 This_month_salary =  E * T
 
 print(f'This monh salary: {This_month_salary}')
+
+
+# There is a limitation to all the codes above, guess what's that?
+# The overloading methods - e.g {__add__(self)} can only add two variables of a class. When we input three, it throws an error
+#To solve this problem, we have to modify the methods. ==> Check the code below
+
+
+class Book:
+    def __init__(self, pages) -> None:
+        self.pages = pages
+        
+        # Keep an eye on the code directly below this and notice the difference
+    def __add__(self, other):
+        result = self.pages + other.pages
+        b = Book(result)
+        return b
+    # The code above adds up the number of pages in each Book instance that is added with the '+' operator
+    
+    def __str__(self):
+        return f'The total number of pages you are to read is: {self.pages}. You can do it, bro 💪'
+
+book1 = Book(200)
+book2 = Book(400)
+book3 = Book(600)
+
+Total_pages = book1 + book2 + book3
+
+print(Total_pages)
