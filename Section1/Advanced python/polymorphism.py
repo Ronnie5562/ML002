@@ -128,14 +128,14 @@ class Employee:
         self.wage = wage
 
     def __mul__(self, other):
-        return self.wage * other.days
+        return f"{self.name}'s salary for this month is: ${self.wage * other.days}"
 
 class TimeSheet:
     def __init__(self, name, days):
         self.name = name
         self.days = days
 
-Employee1 = Employee('Don', 500)
-Days = TimeSheet('Don', 25)
+Employee1 = Employee('Ronald', 500)
+Days = TimeSheet('Ronald', 25)
 
 print(Employee1 * Days)
