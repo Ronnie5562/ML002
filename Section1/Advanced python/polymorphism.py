@@ -63,3 +63,27 @@ print(sub_result)
 # >= -- -> object.__ge__(self, other)
 # == -- -> object.__eq__(self, other)
 # != -- -> object.__ne__(self, other)
+
+
+# Program to overload multiplication operator to work on Employee objects:
+
+class Employer:
+    def __init__(self, name, wage):
+        self.name = name
+        self.wage = wage
+
+    def __mul__(self, other):
+        return self.wage * other.days
+
+class Timesheet:
+    def __init__(self, name, days):
+        self.name = name
+        self.days = days
+
+
+E = Employer('Ronald', 300000)
+T = Timesheet('Ronald', 24)
+
+This_month_salary =  E * T
+
+print(f'This monh salary: {This_month_salary}')
