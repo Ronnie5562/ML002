@@ -1,0 +1,63 @@
+# Polymorphism in Python refers to the ability of objects to take on multiple forms. This means that objects of different classes can be treated 
+# as if they were of the same class, allowing for more flexible and dynamic code. Polymorphism is achieved in Python through method overriding and 
+# method overloading. Method overriding allows a subclass to provide its own implementation of a method already defined in its superclass, while 
+# method overloading allows multiple methods with the same name but different parameters to coexist within the same class. This enables Python
+# code to be more modular and easier to maintain.
+
+
+
+# class Book:
+#     def __init__(self, pages):
+#         self.pages = pages
+
+# b1 = Book(500)
+# b2 = Book(375)
+
+# result = b1 + b2
+# print(result) # This throws an error, but look at the code below and notice the difference.
+
+class Book:
+    def __init__(self, pages):
+        self.pages = pages
+    
+    def __add__(self, other):
+        return self.pages + other.pages
+    
+    def __mul__(self, other):
+        return self.pages * other.pages
+    
+    def __sub__(self, other):
+        return abs(self.pages - other.pages)
+
+
+b1 = Book(500)
+b2 = Book(700)
+
+add_result = b1 + b2
+mul_result = b1 * b2
+sub_result = b1 - b2
+
+print(add_result)
+print(mul_result)
+print(sub_result)
+
+# The following is the list of operators and corresponding magic methods.
+
+# + -- -> object.__add__(self, other)
+# - -- -> object.__sub__(self, other)
+# * -- -> object.__mul__(self, other)
+# / -- -> object.__div__(self, other)
+#{} // -- -> object.__floordiv__(self, other)
+# % -- -> object.__mod__(self, other)
+# ** -- -> object.__pow__(self, other)
+# += -- -> object.__iadd__(self, other)
+# -= -- -> object.__isub__(self, other)
+# *= -- -> object.__imul__(self, other)
+# /= -- -> object.__idiv__(self, other)
+#{}   //= -- -> object.__ifloordiv__(self, other)
+# %= -- -> object.__imod__(self, other)
+# **= -- -> object.__ipow__(self, other)
+# < -- -> object.__lt__(self, other)
+# <= -- -> object.__le__(self, other)
+# > -- -> object.__gt__(self, other)
+# >= -- -> object.__ge__(self, other)
