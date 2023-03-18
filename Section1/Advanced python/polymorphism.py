@@ -128,7 +128,10 @@ class Employee:
         self.wage = wage
 
     def __mul__(self, other):
-        return f"{self.name}'s salary for this month is: ${self.wage * other.days}"
+        if self.name == other.name:
+            return f"{self.name}'s salary for this month is: ${self.wage * other.days}"
+        else:
+            return "You cannot multiply an employee's salary with another emplooyee TimeSheet"
 
 class TimeSheet:
     def __init__(self, name, days):
