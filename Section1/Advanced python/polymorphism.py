@@ -118,3 +118,24 @@ print(Total_pages)
 
 # Confused?
 # Watch: Advanced Python || Operator Overloading Part - 2 || by Durga On 26-07-2018 - on Youtube
+
+
+# More examples
+
+class Employee:
+    def __init__(self, name, wage) -> None:
+        self.name = name
+        self.wage = wage
+
+    def __mul__(self, other):
+        return self.wage * other.days
+
+class TimeSheet:
+    def __init__(self, name, days):
+        self.name = name
+        self.days = days
+
+Employee1 = Employee('Don', 500)
+Days = TimeSheet('Don', 25)
+
+print(Employee1 * Days)
