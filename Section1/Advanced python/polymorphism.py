@@ -142,3 +142,11 @@ Employee1 = Employee('Ronald', 500)
 Days = TimeSheet('Ronald', 25)
 
 print(Employee1 * Days)
+
+
+# Method overriding:
+# What ever members available in the parent class are bydefault available to the child class through
+# inheritance. If the child class not satisfied with parent class implementation then child class is
+# allowed to redefine that method in the child class based on its requirement. This concept is called
+# overriding.
+# Overriding concept applicable for both methods and constructors  -- durga
