@@ -15,7 +15,7 @@ class Child(Parent):
 class Parent:
     def m1(self):
         print('Parent Method')
-# Notice that all the classess below are direct sub classess of Parent(the above class).
+# Notice that all the classess below are direct sub classess of Parent(the above class) i.e they both directly inherit from Parent Class.
 class Child(Parent):
     def m2(self):
         print('Child Method')
