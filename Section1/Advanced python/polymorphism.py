@@ -150,3 +150,5 @@ print(Employee1 * Days)
 # allowed to redefine that method in the child class based on its requirement. This concept is called
 # overriding.
 # Overriding concept applicable for both methods and constructors  -- durga
+
+# Example:
