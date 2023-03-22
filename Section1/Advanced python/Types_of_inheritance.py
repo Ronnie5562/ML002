@@ -56,5 +56,17 @@ class Child(first_Parent, second_Parent):
     def m3(self):
         print('Child Method')
 
-# 5. Hybrid inheritance
+# 5. Hybrid inheritance ==> It involves the use of two or more of the above at the same time.
 # 6. Cyclic inheritance
+    # It involves a class inheriting from itself.
+    # E.g ==> class A(A) - in this case, the class A is inheriting from class A (itself)
+    # Note Cyclic inheritance is not accepted in any language.
+        #  Another example
+            # class A(B):
+            #     def m1(self):
+            #         print('Hello')
+
+
+            # class B(A):
+            #     def m2(self):
+            #         print('Holla')
