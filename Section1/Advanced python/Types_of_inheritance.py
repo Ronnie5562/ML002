@@ -37,5 +37,24 @@ class SubChild(Child):
         print('Sub Child Method')
 
 # 4. Multiple inheritance
+    # It involves multiple parents but a single child.
+    # An instance whereby we have a subclass inherinting from two parent classess that both contain one or more same method, an Ambiguity problem 
+    # is introduced - Some people also refer to it as Diamond Access problem. In that case, the method in the first listed class is used.
+    # i.e class Example(parent1, parent2) in this example, if parent1 and parent2 both have a particular method, the method in parent1 will be the
+    # chosen one.
+
+class first_Parent:
+    def m1(self):
+        print('first_Parent')
+
+class second_Parent:
+    def m1(self):
+        print('second_Parent')
+
+
+class Child(first_Parent, second_Parent):
+    def m3(self):
+        print('Child Method')
+
 # 5. Hybrid inheritance
 # 6. Cyclic inheritance
