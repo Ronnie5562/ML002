@@ -15,10 +15,11 @@ class Child(Parent):
 class Parent:
     def m1(self):
         print('Parent Method')
+# Notice that all the classess below are direct sub classess of Parent(the above class).
 class Child(Parent):
     def m2(self):
         print('Child Method')
-class SubChild(Child):
+class SubChild(Parent):
     def m3(self):
         print('Sub Child Method')
 
@@ -34,7 +35,7 @@ class Child(Parent):
 class SubChild(Child):
     def m3(self):
         print('Sub Child Method')
-        
+
 # 4. Multiple inheritance
 # 5. Hybrid inheritance
 # 6. Cyclic inheritance
