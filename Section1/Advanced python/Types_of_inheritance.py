@@ -60,7 +60,7 @@ class Child(first_Parent, second_Parent):
 # 6. Cyclic inheritance
     # It involves a class inheriting from itself.
     # E.g ==> class A(A) - in this case, the class A is inheriting from class A (itself)
-    # Note Cyclic inheritance is not accepted in any language.
+    # Note Cyclic inheritance is not accepted in any programming language.
         #  Another example
             # class A(B):
             #     def m1(self):
