@@ -78,3 +78,29 @@ print(C.mro()) # OUTPUT: [<class '__main__.C'>, <class '__main__.P'>, <class 'ob
 # __str__(self): The string representation of the object, which is used by the str() function and the print statement.
 # __repr__(self): The string representation of the object, which is used by the repr() function and the interactive interpreter.
 # Since every class is ultimately derived from object, it means that all classes have access to these fundamental methods. This allows Python to have a consistent and unified object model, which is one of the reasons why Python is so popular and easy to use.
+
+
+
+
+
+'''
+    ==> STUDY THE BELOW also learn more on the super() function
+class A:
+    def m1(self):
+        print('A method')
+class B(A):
+    def m1(self):
+        print('B method')
+class C(B):
+    def m1(self):
+        print('C method')
+class D(C):
+    def m1(self):
+        print('D method')
+class E(D):
+    def m1(self):
+        super(C, self).m1()
+        
+e = E()
+e.m1()
+'''
