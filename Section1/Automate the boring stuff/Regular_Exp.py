@@ -31,3 +31,10 @@ import re
 pattern = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 chunk = pattern.search('Call me at 415-555-1011 tomorrow.')
 print(f'Phone number found: {chunk.group(0)}')
+
+MO = re.compile(r'Batman|Tina Fey')
+obj1 = MO.search('Batman and Tina Fey')
+print(obj1.group())
+print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
+obj2 = MO.search('Tina Fey and Batman reside in Gotham city')
+print(obj2.group())
