@@ -41,3 +41,26 @@ n$	    - Matches any string with n at the end of it
 #### Sample Regexs ####
 
 [a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
+
+
+'''re.DOTALL is a flag in Python's re module that changes the behavior of the dot(.) metacharacter. Normally, the dot matches any character except a newline. However, when re.DOTALL is used, the dot will also match newline characters.
+
+Here's an example to demonstrate how re.DOTALL works:
+import re
+
+text = "Hello\nworld"
+pattern = r".*"
+match = re.search(pattern, text)
+
+print(match.group())  # Output: "Hello"
+
+In the above code, the regular expression .* matches all characters in the input string up to the first newline character. Therefore, the matched string is "Hello". If we want the dot to match newline characters as well, we can use re.DOTALL as follows:
+import re
+
+text = "Hello\nworld"
+pattern = r".*"
+match = re.search(pattern, text, flags=re.DOTALL)
+
+print(match.group())  # Output: "Hello\nworld"
+In this example, we pass the re.DOTALL flag to re.search() function, which causes the dot to match newline characters as well. Therefore, the matched string is "Hello\nworld".
+'''
