@@ -42,3 +42,13 @@ print(obj2.group())
 print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
 obj3 = MO2.search('The adventure of Batman')
 print(obj3.group())
+
+"""_NOTE_:
+    The Regex-object search() method only matches the first occurence of the regex pattern specified. If we want to match all the occurences, we use the findall() method instead. The findall() method returns a list of all natched objects 
+"""
+
+pattern2 = "[^abcilnkyeht' ]"
+
+regexObj = re.findall(pattern2, "I don't actually know waht to type in here", re.IGNORECASE)
+
+print(regexObj)

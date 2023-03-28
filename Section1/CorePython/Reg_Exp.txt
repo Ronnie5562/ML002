@@ -9,8 +9,10 @@
 
 \b      - Word Boundary
 \B      - Not a Word Boundary
-^       - Beginning of a String
-$       - End of a String
+^[caret]       - Beginning of a String
+$[dollar]      - End of a String
+
+Here is a mnemonic to remember caret[^] and dollar[$]  -- carrot cost dollars - This would remind us that the caret comes first and the dollar sign comes last.
 
 []      - Matches Characters in brackets
 [^ ]    - Matches Characters NOT in brackets
