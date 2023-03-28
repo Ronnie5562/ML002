@@ -1,3 +1,4 @@
+import datetime
 """_summary_
 There are two main branches of storage in computing, these are temporary storage and permanent storage.
         { in python}
@@ -21,8 +22,8 @@ Types of files:
 
 if __name__ == '__main__':
     for x in range(3):
-        file_name = input('Enter file name: ')
-        message = input('Enter your log message: ')
-        f = open(f'inputs{file_name}', 'w')
+        file_name = input('Enter file name:')
+        message = input('Enter your log message: ') + ' ' + str(datetime.datetime.now())
+        f = open(f"C:\\Users\\HP\\Desktop\\ML002\\Section1\\Advanced python\\inputs\\{file_name}", 'w')
         f.write(message)
         f.close()
