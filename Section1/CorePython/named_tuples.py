@@ -18,6 +18,7 @@
 
 # Define a named tuple type
 #Point = namedtuple('Point', ['x', 'y'])
+# The first parameter specifies the name of the new named tuple subclass that will be created
 
 # Create an instance of the named tuple
 #p = Point(x=1, y=2)
