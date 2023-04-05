@@ -1,7 +1,8 @@
 """__Numpy Array Functions__
 1. Array() ==>  It creates an Array from lists or tuples.
 2. Arange() ==> It creates an Array of evenly spaced values within a given interval.
-3. Zeros() ==> It creates an Array filled with zeros
+3. Zeros() ==> It creates an Array filled with zeros.
+4. Empty() ==> It creates a new uninitialized array.
 """
 
 import numpy as np
@@ -56,3 +57,21 @@ print('______')
 print(AZ3)
 print('______')
 print()
+
+#  4. ones():
+# It has the same working principle as the zeros() function.
+
+AZ1 = np.ones(5)
+AZ2 = np.ones((2, 4), dtype=int)
+AZ3 = np.ones((2, 3, 4), dtype=int)
+print('4. ones() function')
+print(AZ1)
+print('______')
+print(AZ2)
+print('______')
+print(AZ3)
+print('______') 
+print()
+
+# We also have another function that works like zeros() and ones() - empty(). This function creates a new uninitialized array. I nstaed of filling the array with either zeros or ones, it fills them with random values.
+# You can also check out the full() function.
