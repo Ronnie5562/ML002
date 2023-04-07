@@ -48,7 +48,7 @@ print()
 
 AZ1 = np.zeros(5)
 AZ2 = np.zeros((2,4), dtype=int)
-AZ3 = np.zeros((2,3,4), dtype=int)
+AZ3 = np.zeros((2,3,4), dtype=complex)
 print('3. zeros() function')
 print(AZ1)
 print('______')
