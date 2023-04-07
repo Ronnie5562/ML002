@@ -107,3 +107,25 @@ print(Matrix5)
 
 Identity_Matrix = np.identity(5, dtype=int)
 print(Identity_Matrix)
+
+# Numpy Random Module
+    # rand(): Creates an array of the given shape and populate it with random samples from a uniform distribution over [0,1]
+
+rand = np.random.rand(4,5)
+print(rand)
+
+    #randn(): Creates array of specified shape and fils it with random values as per standard normal distribution
+
+randn = np.random.randn(5, 2)
+print(randn)
+
+    # ranf(): Creates array of specified shape and fils it with random floats in the half open interval [0.0, 1.0]
+
+ranf = np.random.ranf(5)
+print(ranf)
+
+    # randint(): Creates array of specified shape and fils it with random integers from low to high.
+    #           If high is not mentioned, then interval will be [0, low]
+
+randint = np.random.randint(low=4, high=10, size=(3,4))
+print(randint)
