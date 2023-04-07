@@ -14,5 +14,8 @@ C = A * B
 print(C)
 
 #print(help(np.array))
-print(help(np.arange))
+#print(help(np.arange))
 #print(help(np.zeros))
+
+LN1 = np.linspace(1, 35, dtype=complex, num=5)
+print(LN1)

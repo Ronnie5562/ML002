@@ -2,7 +2,9 @@
 1. Array() ==>  It creates an Array from lists or tuples.
 2. Arange() ==> It creates an Array of evenly spaced values within a given interval.
 3. Zeros() ==> It creates an Array filled with zeros.
-4. Empty() ==> It creates a new uninitialized array.
+4. ones() ==>  It creates an Array filled with ones.
+5. Empty() ==> It creates a new uninitialized array.
+6. Linspace() ==> It creates Array filled with evenly spaced values.
 """
 
 import numpy as np
@@ -75,3 +77,10 @@ print()
 
 # We also have another function that works like zeros() and ones() - empty(). This function creates a new uninitialized array. I nstaed of filling the array with either zeros or ones, it fills them with random values.
 # You can also check out the full() function.
+
+# 6. Linspace():
+
+LIN1 = np.linspace(1, 100, num=5, retstep=True)
+LIN2 = np.linspace(2, 45, retstep=True, endpoint=False)
+print(LIN1)
+print(LIN2)
