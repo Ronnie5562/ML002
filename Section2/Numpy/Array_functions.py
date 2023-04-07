@@ -129,3 +129,11 @@ print(ranf)
 
 randint = np.random.randint(low=4, high=10, size=(3,4))
 print(randint)
+
+"""__Numpy Array Attributes__
+(1) .ndim - To get the number on dimensions has array posess.
+(2) .shape - It returns the (row, column) representation of an array.
+(3) .size - It returns the number of elements in the array.
+(4) .dtype - It returns the data type of the elements contained in the array.
+(5) .itemsize - It returns the size of each element in an array in byte.
+"""

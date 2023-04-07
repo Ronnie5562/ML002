@@ -23,3 +23,11 @@ print(LN1)
 lp = np.eye(10, dtype=complex)
 
 print(lp)
+
+stuff = np.zeros(shape=(2,3), dtype=int)
+print(stuff)
+print(stuff.ndim)
+print(stuff.size)
+print(stuff.shape)
+print(stuff.dtype)
+print(stuff.itemsize)
