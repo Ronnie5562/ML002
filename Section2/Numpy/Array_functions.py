@@ -1,3 +1,4 @@
+# I learnt this from Amulus Academy.
 """__Numpy Array Functions__
 1. Array() ==>  It creates an Array from lists or tuples.
 2. Arange() ==> It creates an Array of evenly spaced values within a given interval.
@@ -5,6 +6,8 @@
 4. ones() ==>  It creates an Array filled with ones.
 5. Empty() ==> It creates a new uninitialized array.
 6. Linspace() ==> It creates Array filled with evenly spaced values.
+7. Eye() ==> Returns array filled with zeros except in the k-th diagonal, whose values are equal to 1.
+8. Identity() ==> The identity array is a square array with ones on the principal diagonal.
 """
 
 import numpy as np
@@ -84,3 +87,23 @@ LIN1 = np.linspace(1, 100, num=5, retstep=True)
 LIN2 = np.linspace(2, 45, retstep=True, endpoint=False)
 print(LIN1)
 print(LIN2)
+
+# 7. Eye():
+
+Matrix1 = np.eye(10)
+Matrix2 = np.eye(3,3, k=1)
+Matrix3 = np.eye(3,3, k=-1)
+Matrix4 = np.eye(3,3, k=-1, dtype=int)
+Matrix5 = np.eye(10, 5)
+
+print(Matrix1)
+print(Matrix2)
+print(Matrix3)
+print(Matrix4)
+print(Matrix5)
+
+# 8. Identity():
+# identity(n, dtype=None)
+
+Identity_Matrix = np.identity(5, dtype=int)
+print(Identity_Matrix)

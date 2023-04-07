@@ -19,3 +19,7 @@ print(C)
 
 LN1 = np.linspace(1, 35, dtype=complex, num=5)
 print(LN1)
+
+lp = np.eye(10, dtype=complex)
+
+print(lp)
