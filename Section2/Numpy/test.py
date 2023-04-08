@@ -31,3 +31,7 @@ print(stuff.size)
 print(stuff.shape)
 print(stuff.dtype)
 print(stuff.itemsize)
+
+New_Stuff = np.array([[10, 20, 30], [40, 50, 60]])
+print(New_Stuff)
+print(New_Stuff.shape)
