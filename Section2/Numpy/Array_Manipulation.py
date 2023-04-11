@@ -52,4 +52,17 @@ Array_4 = np.arange(1,11).reshape(5,2)
 Array_4_transposed = Array_4.transpose( )
 print(Array_4_transposed)
 
+Array_4_B = np.array([
+    [
+        [1,2,3,4],
+        [5,6,7,8],
+        [9,10,11,12]
+    ],
+    [
+        [13,14,15,16],
+        [17,18,19,20],
+        [21,22,23,24]
+    ]
+])
+print(Array_4_B.transpose((2,0,1)))
 # C2.  
