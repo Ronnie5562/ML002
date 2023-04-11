@@ -36,3 +36,6 @@ for team in sorted(team_scores, key=get_value, reverse=True):
     if count < 11:
         print(f"{team}: {team_scores[team]}")
         count += 1
+
+# It is preferrabe to use a lambda function in this case, since we are uing the get_value function only once.
+#  ==> for team in sorted(team_scores, key=lambda team: team_scores[team], reverse=True)

@@ -35,3 +35,9 @@ print(stuff.itemsize)
 New_Stuff = np.array([[10, 20, 30], [40, 50, 60]])
 print(New_Stuff)
 print(New_Stuff.shape)
+
+new_Array = np.arange(1, 41, 2)
+
+print(new_Array.reshape((5,4)))
+new_Array.resize((6, 8))
+print(new_Array)
