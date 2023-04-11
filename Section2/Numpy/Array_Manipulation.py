@@ -5,8 +5,11 @@ In this module, I am going to be learning about other ways in which a numpy arra
     ==> [A] By using the reshape() function
     ==> [B] By using the resize() function
 (2) Flatten: We can Flatten an array in two ways:
-    ==> [A] By using the Flatten() function
+    ==> [A] By using the flatten() function
     ==> [B] By using the ravel() function
+(2) Transpose: We can Transpose an array in two ways:
+    ==> [A] By using the transpose() function
+    ==> [B] By using the swapaxes() function
 """
 import numpy as np
 
@@ -42,3 +45,11 @@ print(Array_3_flatten)
 
 Array_3_flatten_ravel = Array_3.ravel()
 print(Array_3_flatten_ravel)
+
+# C1. Transpose: it changes the axes of a matrix - e.g (2,5) becomes (5,2), (2,3,4) ==> (4,3,2).
+
+Array_4 = np.arange(1,11).reshape(5,2)
+Array_4_transposed = Array_4.transpose( )
+print(Array_4_transposed)
+
+# C2.  
