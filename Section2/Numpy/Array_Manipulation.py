@@ -12,7 +12,9 @@ In this module, I am going to be learning about other ways in which a numpy arra
     ==> [B] By using the swapaxes() function
 (4) Joining and splitting:
     ==> [A] We use the concatenate() function to join two array together
-    ==> [B] By using the swapaxes() function
+    ==> [B] We use the split() function to split an array into subarrays.
+    ==> [C] We also have vstack() and hstack() that joins arrays vertically and horizontally respectively.
+    ==> [D] We also have vsplit() and hsplit() that splits an array vertically and horizontally respectively.
 """
 import numpy as np
 
@@ -92,3 +94,26 @@ Array_1_to_join = np.arange(1,6)
 Array_2_to_join = np.arange(6, 13)
 np.concatenate((Array_1_to_join, Array_2_to_join), out=Array_created_with_zeros)
 print(Array_created_with_zeros)
+
+
+# D2. vstack: concatentes arrays vertically. i.e it stacks array on themselves.
+# In 1D array, it concatenates them to become a 2D array
+# In all other Dimensions, it acts like the concatenate() function around axis=0.
+
+A1 = np.arange(6)
+A2 = np.arange(6, 12)
+A3 = np.vstack((A1, A2))
+print(A3)
+
+# D3. hstack: concatentes arrays horizontally. i.e it stacks array beside one another.
+# In 1D array, it concatenates them together an still return a 1D array.
+# In all other Dimensions, it acts like the concatenate() function around axis=1.
+B1 = np.arange(6)
+B2 = np.arange(6, 12)
+B3 = np.hstack((B1, B2))
+print(B3)
+
+# D4. split(array, section, axis): it split an array into multiple array along the specified axis.
+# array: The array you intend to split.
+# section: the number of new arrays you want to get from the split operation. The section specified should be a number that can divide the array equally.
+# We also have vsplit() and hsplit() that splits an array vertically and horizontally respectively.
