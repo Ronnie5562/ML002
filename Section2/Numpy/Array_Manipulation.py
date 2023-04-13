@@ -132,3 +132,8 @@ Two_D_Array_3 = np.insert(Two_D_Array, 1, 10, axis=0) # it broadcast the value i
 
 print(Two_D_Array_2)
 print(Two_D_Array_3)
+
+# append() is used to add a value to the end of an array
+
+# E2. delete:
+# check out print(help(np.delete ))
