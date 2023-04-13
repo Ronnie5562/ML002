@@ -117,3 +117,18 @@ print(B3)
 # array: The array you intend to split.
 # section: the number of new arrays you want to get from the split operation. The section specified should be a number that can divide the array equally.
 # We also have vsplit() and hsplit() that splits an array vertically and horizontally respectively.
+
+
+# E1. insert:
+IA = np.arange(1,11)
+IB = np.insert(IA, 1, 10)
+print(IB)
+
+# With a 2D array.
+Two_D_Array = np.array([[1, 2],
+                        [3, 4]])
+Two_D_Array_2 = np.insert(Two_D_Array, 1, [1,2]) # It flatens the array if the axis is not specified.
+Two_D_Array_3 = np.insert(Two_D_Array, 1, 10, axis=0) # it broadcast the value if the value you want to insert cannot fill up the space.
+
+print(Two_D_Array_2)
+print(Two_D_Array_3)
