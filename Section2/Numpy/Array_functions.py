@@ -137,3 +137,7 @@ print(randint)
 (4) .dtype - It returns the data type of the elements contained in the array.
 (5) .itemsize - It returns the size of each element in an array in byte.
 """
+
+
+A = np.random.randn(10, 5)
+print(A)
