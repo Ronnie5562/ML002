@@ -47,3 +47,14 @@ print(B1, " ==> ", SUB_B1)
 print(B1, " ==> ", DIV1_B1)
 print(B1, " ==> ", DIV2_B1)
 print(B1, " ==> ", SQR_B1)
+
+
+"""_summary_
+To perform arithmetic operations on array, we can also use the built-in methods
+a + b ==> np.add(a, b)
+a - b ==> np.subtract(a, b)
+a * b ==> np.multiply(a, b)
+a / b ==> np.divide(a, b)
+a % b ==> np.mod(a, b)
+a ** b ==> np.power(a, b)
+"""
