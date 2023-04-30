@@ -1,4 +1,4 @@
-#filter() function:
+# filter() function:
 # We can use filter() function to filter values from the given sequence based on some condition.
 #
 # filter(function, sequence)
@@ -14,17 +14,18 @@ def isEven(x):
         return True
     else:
         return False
-    
-l=[0,5,10,15,20,25,30] 
-l1=list(filter(isEven,l)) 
-print(l1) #[0,10,20,30]
 
-#with lambda Function:
-l=[0,5,10,15,20,25,30] 
-l1=list(filter(lambda x:x%2==0,l)) 
-print(l1) #[0,10,20,30] 
-l2=list(filter(lambda x:x%2!=0,l)) 
-print(l2) #[5,15,25]
+
+l = [0, 5, 10, 15, 20, 25, 30]
+l1 = list(filter(isEven, l))
+print(l1)  # [0,10,20,30]
+
+# with lambda Function:
+l = [0, 5, 10, 15, 20, 25, 30]
+l1 = list(filter(lambda x: x % 2 == 0, l))
+print(l1)  # [0,10,20,30]
+l2 = list(filter(lambda x: x % 2 != 0, l))
+print(l2)  # [5,15,25]
 
 
 # map() function:
@@ -37,34 +38,34 @@ print(l2) #[5,15,25]
 # The function can be applied on each element of sequence and generates new sequence
 
 
-numbers = [1,2,3,4,5,6,7,8]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-new_numbers = list(map(lambda x : x * x, numbers))
+new_numbers = list(map(lambda x: x * x, numbers))
 
 print(new_numbers)
 
 # Python code to join each family members' name with the family surname
-family_members = ['johnson', 'mira', 'anabel', 'faith', 'jude', 'gabriel']
-family_surname = 'Elon'
+family_members = ["johnson", "mira", "anabel", "faith", "jude", "gabriel"]
+family_surname = "Elon"
 
-names_with_surname = list(map(lambda name: f'{family_surname} {name}', family_members))
+names_with_surname = list(map(lambda name: f"{family_surname} {name}", family_members))
 
 print(names_with_surname)
 
-#We can apply map() function on multiple lists also.But make sure all list should have same length.
-#Syntax: 
+# We can apply map() function on multiple lists also.But make sure all list should have same length.
+# Syntax:
 # map(lambda x, y: x*y, l1, l2))
 #     x is from l1 and y is from l2
 #     Eg:
 
-l1= [1, 2, 3, 4]
-l2= [2, 3, 4, 5]
-l3 = list(map(lambda x, y: x*y, l1, l2))
+l1 = [1, 2, 3, 4]
+l2 = [2, 3, 4, 5]
+l3 = list(map(lambda x, y: x * y, l1, l2))
 print(l3)  # [2, 6, 12, 20]
 
 
-list1 = [1,2,3,4,5]
-list2 = [6,7,8,9,10]
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
 list3 = [11, 12, 13, 14, 15]
 
 mul_list = list(map(lambda x, y, z: x * y * z, list1, list2, list3))
@@ -89,7 +90,6 @@ print(reduce_add_all)
 
 stuff2 = [10, 20, 30, 40, 50]
 
-reduce_mul_all = reduce(lambda x, y : x * y, stuff2)
+reduce_mul_all = reduce(lambda x, y: x * y, stuff2)
 
 print(reduce_mul_all)
-

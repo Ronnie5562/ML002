@@ -1,9 +1,9 @@
-# Regular expressions, also known as regex or regexp, are powerful tools for pattern matching and text manipulation. In Python, regular expressions are implemented 
+# Regular expressions, also known as regex or regexp, are powerful tools for pattern matching and text manipulation. In Python, regular expressions are implemented
 # through the built-in re module.
 
 # A regular expression is a sequence of characters that defines a search pattern. The re module provides a variety of functions for working with regular expressions,
-# including search(), match(), findall(), sub(), and split(). These functions allow you to search for patterns within strings, replace substrings, and split strings 
-#based on patterns.
+# including search(), match(), findall(), sub(), and split(). These functions allow you to search for patterns within strings, replace substrings, and split strings
+# based on patterns.
 
 # Here are some basic examples of regular expressions in Python:
 
@@ -21,8 +21,8 @@ if match:
 else:
     print("Pattern not found.")
 
-text2 = 'The boy is very innovative. We call him starboy'
-pattern = 'boy'
+text2 = "The boy is very innovative. We call him starboy"
+pattern = "boy"
 
 match2 = re.search(pattern, text2)
 print(match2)
@@ -56,26 +56,25 @@ new_text = re.sub(pattern, replacement, text)
 print(new_text)
 
 
-
-# These are just a few examples of what you can do with regular expressions in Python. Regular expressions are a powerful tool for working with text data, and learning 
+# These are just a few examples of what you can do with regular expressions in Python. Regular expressions are a powerful tool for working with text data, and learning
 # how to use them can be very beneficial for data cleaning, text processing, and more.
 
 
 # using .compile() and .finditer()
 
-compile_text = 'This text is a text that was texted to text him about a text that was texted on text day'
+compile_text = "This text is a text that was texted to text him about a text that was texted on text day"
 
 
-compile_pattern = re.compile('text')
+compile_pattern = re.compile("text")
 Text_matches = compile_pattern.finditer(compile_text)
 
-print('______________________________________________')
+print("______________________________________________")
 for match in Text_matches:
     print(match)
-print('______________________________________________')
+print("______________________________________________")
 
 
-text_to_search = '''
+text_to_search = """
 abcdefghijklmnopqurtuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 1234567890
@@ -98,12 +97,12 @@ Mr Smith
 Ms Davis
 Mrs. Robinson
 Mr. T
-'''
+"""
 
-sentence = 'Start a sentence and then bring it to an end'
+sentence = "Start a sentence and then bring it to an end"
 
 # The re.IGNORECASE makes the pattern case-insensitive
-pattern = re.compile(r'start', re.IGNORECASE)
+pattern = re.compile(r"start", re.IGNORECASE)
 
 matches = pattern.search(sentence)
 
@@ -112,7 +111,7 @@ print(matches)
 # code to match all the phone numbers inside the text_to_search variable above.
 # check th Reg_Exp.txt file to understand why we are using \d and . in the below.
 # The { r } inside the compile method, before the string represents raw string.
-num_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d')
+num_pattern = re.compile(r"\d\d\d.\d\d\d.\d\d\d")
 new_match = num_pattern.finditer(text_to_search)
 
 for match in new_match:
@@ -121,33 +120,33 @@ for match in new_match:
 
 # Write a code to parse out all the phone numbers in Reg_Exp_data.txt
 
-with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
+with open("Reg_Exp_data.txt", "r", encoding="UTF-8") as file:
     file_data = file.read()
     # The data_pattern below matches a number that has the format of -[3digits, any char, 3digits, any chat, 4digits]
-    data_pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+    data_pattern = re.compile(r"\d\d\d.\d\d\d.\d\d\d\d")
     # To specify a list of char the {any char} can be, we use a character set - [different_characters]
-    data_pattern = re.compile(r'\d\d\d[-]\d\d\d[-]\d\d\d\d')
+    data_pattern = re.compile(r"\d\d\d[-]\d\d\d[-]\d\d\d\d")
 
     Phone_book = data_pattern.finditer(file_data)
 
     for numbers in Phone_book:
         print(numbers)
 
-with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
+with open("Reg_Exp_data.txt", "r", encoding="UTF-8") as file:
     file_data = file.read()
-    name_pattern = re.compile(r'M(r|s|rs)\s[\w]*')
-    
+    name_pattern = re.compile(r"M(r|s|rs)\s[\w]*")
+
     matched_names = name_pattern.finditer(file_data)
- 
+
     for name in matched_names:
         print(name)
 
 # To match all the emails in Reg_Exp_data.txt file.
-print('______________________________________________')
-with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
+print("______________________________________________")
+with open("Reg_Exp_data.txt", "r", encoding="UTF-8") as file:
     file_data = file.read()
-    name_pattern = re.compile(r'\w+@\w+\.\w+')
-    
+    name_pattern = re.compile(r"\w+@\w+\.\w+")
+
     matched_names = name_pattern.finditer(file_data)
 
     for name in matched_names:
@@ -156,8 +155,8 @@ with open('Reg_Exp_data.txt', 'r', encoding='UTF-8') as file:
 # Working with groups [()] in RegExp
 
 
-with open('./Reg_Exp_data.txt') as file:
-    url_pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+with open("./Reg_Exp_data.txt") as file:
+    url_pattern = re.compile(r"https?://(www\.)?(\w+)(\.\w+)")
     data = file.read()
 
     urls = url_pattern.finditer(data)

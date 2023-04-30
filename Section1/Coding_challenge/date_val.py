@@ -1,8 +1,7 @@
 import re
 
-date_pattern = re.compile(
-    r'([0-2][0-9]|3[0-1])/(0[0-9]|1[0-2])/([0-2][0-9][0-9][0-9])')
-dates = '''
+date_pattern = re.compile(r"([0-2][0-9]|3[0-1])/(0[0-9]|1[0-2])/([0-2][0-9][0-9][0-9])")
+dates = """
 19/06/2041
 27/09/2042
 14/03/2043
@@ -33,7 +32,7 @@ dates = '''
 13/13/2026
 31/04/2028 (since April has only 30 days)
 07/09/2100
-'''
+"""
 result = date_pattern.findall(dates)
 Valid = []
 Invalid = []
@@ -42,14 +41,14 @@ for day, month, year in result:
     date_list = [day, month, year]
     if month == 4 or month == 6 or month == 9 or month == 11:
         if day > 30:
-            Invalid.append(f'{day}/{month}/{year}')
+            Invalid.append(f"{day}/{month}/{year}")
         else:
-            Valid.append(f'{day}/{month}/{year}')
+            Valid.append(f"{day}/{month}/{year}")
     if month == 2:
         if day > 30:
-            Invalid.append(f'{day}/{month}/{year}')
+            Invalid.append(f"{day}/{month}/{year}")
         else:
-            Valid.append(f'{day}/{month}/{year}')
+            Valid.append(f"{day}/{month}/{year}")
 for dates in Valid:
     print(dates)
 print()

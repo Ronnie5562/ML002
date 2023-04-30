@@ -14,7 +14,7 @@ MUL_A1 = A1 * 10
 SUB_A1 = A1 - 1
 DIV1_A1 = 3 / A1
 DIV2_A1 = A1 / 5
-SQR_A1 = A1 ** 2
+SQR_A1 = A1**2
 
 # Notice that the elements in ADD_A1 are higher than their respective value in A1 by 2.
 print(A1, " ==> ", ADD_A1)
@@ -25,20 +25,17 @@ print(A1, " ==> ", DIV2_A1)
 print(A1, " ==> ", SQR_A1)
 
 print()
-print('______________________________________________________________________')
+print("______________________________________________________________________")
 
 # TWO DIMENSIONAL ARRAY
-B1 = np.array([
-    [1,2,3,4],
-    [5,6,7,8]
-])
+B1 = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 
 ADD_B1 = B1 + 2
 MUL_B1 = B1 * 10
 SUB_B1 = B1 - 1
 DIV1_B1 = 3 / B1
 DIV2_B1 = B1 / 5
-SQR_B1 = B1 ** 2
+SQR_B1 = B1**2
 
 # Notice that the elements in ADD_B1 are higher than their respective value in B1 by 2.
 print(B1, " ==> ", ADD_B1)

@@ -4,11 +4,10 @@ import unittest
 
 
 def fib(n):
-    return 1 if n <= 2 else fib(n-1)+fib(n-2)
+    return 1 if n <= 2 else fib(n - 1) + fib(n - 2)
 
 
 class TestFib(unittest.TestCase):
-
     def setUp(self):
         print("setUp")
         self.n = 10
@@ -32,7 +31,7 @@ class TestFib(unittest.TestCase):
         self.assertTrue(fib(self.n) == 55)
 
 
-#The code above is run in the {test_for_test.py} file in this directory.
+# The code above is run in the {test_for_test.py} file in this directory.
 
 # Study the output of this code to understand setUp and tearDown hierarchy
 print(TestFib.__class__.__name__)

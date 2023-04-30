@@ -31,6 +31,7 @@
 # will be reflected in all instances. On the other hand, instance variables are unique to each instance and are used to store values that are
 # specific to a particular instance.
 
+
 class Employee:
 
     num_of_emps = 0
@@ -39,13 +40,13 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.email = first + '.' + last + '@email.com'
+        self.email = first + "." + last + "@email.com"
         self.pay = pay
 
         Employee.num_of_emps += 1
 
     def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+        return "{} {}".format(self.first, self.last)
 
     @classmethod
     def raise_amount(cls, amount):
@@ -53,21 +54,21 @@ class Employee:
 
     @classmethod
     def from_string(cls, emp_str):
-        first, last, pay = emp_str.split('-')
+        first, last, pay = emp_str.split("-")
         return cls(first, last, pay)
 
 
-emp_1 = Employee('Corey', 'Schafer', 50000)
-emp_2 = Employee('Test', 'Employee', 60000)
+emp_1 = Employee("Corey", "Schafer", 50000)
+emp_2 = Employee("Test", "Employee", 60000)
 
 
 print(Employee.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
 
-emp_str_1 = 'John-Doe-70000'
-emp_str_2 = 'Steve-Smith-30000'
-emp_str_3 = 'Jane-Doe-90000'
+emp_str_1 = "John-Doe-70000"
+emp_str_2 = "Steve-Smith-30000"
+emp_str_3 = "Jane-Doe-90000"
 
 new_emp_1 = Employee.from_string(emp_str_1)
 new_emp_2 = Employee.from_string(emp_str_2)
@@ -77,12 +78,12 @@ print(new_emp_1.email)
 print(new_emp_1.pay)
 print(Employee.num_of_emps)
 
-# static method 
+# static method
 # In Python, a static method is a method that belongs to a class rather than an instance of the class. Static methods are defined using the @staticmethod decorator and
 # are called using the class name, rather than an instance of the class. They do not have access to the instance of the class and do not modify the instance data.
 # Static methods are usually used for utility functions that do not depend on the state of the instances.
 
-#Here's an example of how you can define and use static methods in Python:
+# Here's an example of how you can define and use static methods in Python:
 
 
 class Math:
@@ -95,8 +96,8 @@ class Math:
 result = Math.add(1, 2)
 print(result)  # Output: 3
 
-#Static methods are useful in cases where you want to define a function that is logically associated with a class, but you do not need to access the instance data. They 
-#provide a way to encapsulate the function within the class, making the code more organized and easier to maintain.
+# Static methods are useful in cases where you want to define a function that is logically associated with a class, but you do not need to access the instance data. They
+# provide a way to encapsulate the function within the class, making the code more organized and easier to maintain.
 
 #                                                       _______________{    SUMMARY 🔥   }________________
 # Static methods and class methods are both methods that belong to a class rather than an instance of the class in Python. Here are the differences and similarities

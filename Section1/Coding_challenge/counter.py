@@ -2,24 +2,50 @@
 # list.
 from collections import Counter
 
-groceries = ['apple', 'mango', 'orange', 'ginger', 'beef', 'chicken', 'mango', 'apple', 'carrot', 'ginger', 'beef', 'mango', 'grape', 'mango', 'apple', 'carrot', 'ginger', 'rice', 'orange', 'mango', 'mango']
+groceries = [
+    "apple",
+    "mango",
+    "orange",
+    "ginger",
+    "beef",
+    "chicken",
+    "mango",
+    "apple",
+    "carrot",
+    "ginger",
+    "beef",
+    "mango",
+    "grape",
+    "mango",
+    "apple",
+    "carrot",
+    "ginger",
+    "rice",
+    "orange",
+    "mango",
+    "mango",
+]
 
 payment_details = Counter(groceries)
-print(payment_details.most_common()) # Prints the out in according to the number of times they appear descending order.add()
-print(payment_details.most_common(1)) # Prints out the element that appears the most.
+print(
+    payment_details.most_common()
+)  # Prints the out in according to the number of times they appear descending order.add()
+print(payment_details.most_common(1))  # Prints out the element that appears the most.
 
 
 # Write a python code that search for a word in a given text and returns the number of times that word appears.
 from collections import Counter
+
+
 def word_counter(data):
-    with open('dummy.txt') as file:
+    with open("dummy.txt") as file:
         file_data = file.read()
         file_data_array = file_data.split()
         new_file_data_array = []
 
         for word in file_data_array:
-            word = word.strip('.')
-            word = word.strip(',')
+            word = word.strip(".")
+            word = word.strip(",")
             new_file_data_array.append(word)
 
         words_counter = Counter(new_file_data_array)
@@ -28,7 +54,7 @@ def word_counter(data):
         if data in set(dict_data.keys()):
             print(dict_data[data])
         else:
-            print('Word Not Found!!')
+            print("Word Not Found!!")
 
 
-word_counter('vocabulary')
+word_counter("vocabulary")

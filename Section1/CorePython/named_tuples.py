@@ -14,14 +14,14 @@
 
 # Example 1:
 
-#from collections import namedtuple
+# from collections import namedtuple
 
 # Define a named tuple type
-#Point = namedtuple('Point', ['x', 'y'])
+# Point = namedtuple('Point', ['x', 'y'])
 # The first parameter specifies the name of the new named tuple subclass that will be created
 
 # Create an instance of the named tuple
-#p = Point(x=1, y=2)
+# p = Point(x=1, y=2)
 
 # Access the elements of the named tuple using dot notation
 # print(p.x)  # Output: 1
@@ -31,11 +31,11 @@
 # Named tuples are a useful tool for creating simple, lightweight objects that represent data in a readable and self-documenting way. They are often used in cases where you need to store a small amount of related data, but you don't want to create a full-fledged class for that.
 
 
-#Example 2:
+# Example 2:
 
 from collections import namedtuple
 
-color = namedtuple('color', ['Red', 'Green', 'Blue'])
+color = namedtuple("color", ["Red", "Green", "Blue"])
 
 Color = color(55, 155, 255)
 

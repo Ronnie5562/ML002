@@ -2,8 +2,11 @@
 
 # The main objective of decorator functions is so that we can extend the functionality of existing functions without modifing the function.
 
+
 def wish(name):
     print("Hello", name, "Good Morning")
+
+
 # This function can always print same output for any name
 # Hello Durga Good Morning
 # Hello Ravi Good Morning
@@ -18,16 +21,17 @@ def decor(func):
             print("Hello sunny Bad morning")
         else:
             func(name)
+
     return inner
 
 
 def wish(name):
-    print(f'Hello {name} Good Morning')
+    print(f"Hello {name} Good Morning")
 
 
 greet = decor(wish)
 
-greet('sunny')  # output: Hello sunny Bad morning
-greet('Enny')  # Hello Enny Good Morning
+greet("sunny")  # output: Hello sunny Bad morning
+greet("Enny")  # Hello Enny Good Morning
 
 # if you are confused with what is above, revisit ==> { Closures in python }

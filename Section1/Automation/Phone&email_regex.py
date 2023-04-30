@@ -3,20 +3,27 @@
 """
 import re
 import pyperclip
-number_pattern = re.compile(r"""(
+
+number_pattern = re.compile(
+    r"""(
     (\d{3}|\(\d{3}\)) #Area code
     (\s|-|\.)?        #seperator
     (\d{3})           #First three digits after the area code
     (\s|-|\.)?         #seperator
     (\d{4})           # The last four digits
     (\s*(ext|x|ext.)\s*(\d{2,5}))?    # extension
-)""", re.VERBOSE)
-email_pattern = re.compile(r"""(
+)""",
+    re.VERBOSE,
+)
+email_pattern = re.compile(
+    r"""(
     [a-zA-Z0-9._%+-]+   #Username
     @                  # @ symbol
     [a-zA-Z0-9.-]+      #domain name
     (\.[a-zA-Z]{2,4})  # dot-something
-)""", re.VERBOSE)
+)""",
+    re.VERBOSE,
+)
 """_ABOUT EMAILS_
     The username part of the email address ➊ is one or more characters that can be any of the following: lowercase and uppercase letters, numbers, a dot, an underscore, a percent sign, a plus sign, or a hyphen. You can put all of these into a character class: [a-zA-Z0-9._%+-].
 
@@ -29,9 +36,9 @@ text = pyperclip.paste()
 Matches = []
 
 for number_group in number_pattern.findall(text):
-    number = '-'.join([number_group[1], number_group[3], number_group[5]])
-    if number_group[8] != '':
-        number += ' x' + number_group[8]
+    number = "-".join([number_group[1], number_group[3], number_group[5]])
+    if number_group[8] != "":
+        number += " x" + number_group[8]
     Matches.append(number)
 
 for email_group in email_pattern.findall(text):
@@ -41,7 +48,7 @@ for data in Matches:
     print(data)
 
 
-'''re.DOTALL is a flag in Python's re module that changes the behavior of the dot(.) metacharacter. Normally, the dot matches any character except a newline. However, when re.DOTALL is used, the dot will also match newline characters.
+"""re.DOTALL is a flag in Python's re module that changes the behavior of the dot(.) metacharacter. Normally, the dot matches any character except a newline. However, when re.DOTALL is used, the dot will also match newline characters.
 
 Here's an example to demonstrate how re.DOTALL works:
 import re
@@ -61,4 +68,4 @@ match = re.search(pattern, text, flags=re.DOTALL)
 
 print(match.group())  # Output: "Hello\nworld"
 In this example, we pass the re.DOTALL flag to re.search() function, which causes the dot to match newline characters as well. Therefore, the matched string is "Hello\nworld".
-'''
+"""

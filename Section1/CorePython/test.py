@@ -1,19 +1,19 @@
-with open('case.txt', 'r', encoding='UTF-8') as f:
+with open("case.txt", "r", encoding="UTF-8") as f:
     readfile = f.readline()
 
     print(readfile)
     f.seek(10)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
     f.seek(20)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
     f.seek(30)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
     f.seek(40)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
     f.seek(50)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
     f.seek(60)
-    print('The current cursor positon: ', f.tell())
+    print("The current cursor positon: ", f.tell())
 
 
 # {  How to check a particular file exists or not ?  }
@@ -25,11 +25,12 @@ with open('case.txt', 'r', encoding='UTF-8') as f:
 
 import os
 import sys
+
 fname = input("Enter the name of the file: ")
 
 if os.path.isfile(fname):
     print(f"File exists: {fname}")
-    f = open(fname, 'r', encoding='UTF-8')
+    f = open(fname, "r", encoding="UTF-8")
 else:
     print(f"File does not exists: {fname}")
     sys.exit(0)  # ===> To exit system without executing rest of the program

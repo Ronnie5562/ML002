@@ -5,10 +5,10 @@
 #     print('sorry. This file does not exist')
 # except Exception:
 #     print('sorry. something went wrong')
-# 
+#
 
 
-#_____{BUILTIN ERROR}_____
+# _____{BUILTIN ERROR}_____
 
 # try:
 #     f = open('Calc.py')
@@ -48,11 +48,11 @@
 
 # To manually raise an Error
 try:
-    f = open('./Calc.py')
+    f = open("./Calc.py")
     raise Exception
 except FileNotFoundError as NOTFOUND:
     print(NOTFOUND)
 except Exception:
-    print('Custom Error')
+    print("Custom Error")
 finally:
-    print('I will run irrespective of what happens up there hahaha!!😂😂😂😂😂😂')
+    print("I will run irrespective of what happens up there hahaha!!😂😂😂😂😂😂")

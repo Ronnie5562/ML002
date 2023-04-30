@@ -11,19 +11,27 @@
 """
 
 import numpy as np
+
 #  1. Array():
 # To get info about the numpy array() function, run ==> print(help(np.array))
 
-LI1 = np.array([1,2,3,4,])
-LI2 = np.array([1,2,3,4,2.5,3.7])
-LI3 = np.array([1,2,3,4,2.5,3.7,'d'])
-print('1. array() function')
+LI1 = np.array(
+    [
+        1,
+        2,
+        3,
+        4,
+    ]
+)
+LI2 = np.array([1, 2, 3, 4, 2.5, 3.7])
+LI3 = np.array([1, 2, 3, 4, 2.5, 3.7, "d"])
+print("1. array() function")
 print(LI1)
-print('______')
+print("______")
 print(LI2)
-print('______')
+print("______")
 print(LI3)
-print('______')
+print("______")
 print()
 
 # Run the code above and carefully observe the data type of the elements in each array. What can you say about this?
@@ -35,16 +43,16 @@ print()
 # SYNTAX ==> np.arange([start,] stop [,step], dtype=None)
 # It is kind of similar to the actual range() function in python.
 
-AR1 = np.arange(1,10)
-AR2 = np.arange(2,20,2)
+AR1 = np.arange(1, 10)
+AR2 = np.arange(2, 20, 2)
 AR3 = np.arange(2, 20, dtype="complex")
-print('2. arange() function')
+print("2. arange() function")
 print(AR1)
-print('______')
+print("______")
 print(AR2)
-print('______')
+print("______")
 print(AR3)
-print('______')
+print("______")
 print()
 
 #  3. Zeros():
@@ -52,15 +60,15 @@ print()
 # SYNTAX ==> np.zeros(shape, dtype=float,order='c')
 
 AZ1 = np.zeros(5)
-AZ2 = np.zeros((2,4), dtype=int)
-AZ3 = np.zeros((2,3,4), dtype=complex)
-print('3. zeros() function')
+AZ2 = np.zeros((2, 4), dtype=int)
+AZ3 = np.zeros((2, 3, 4), dtype=complex)
+print("3. zeros() function")
 print(AZ1)
-print('______')
+print("______")
 print(AZ2)
-print('______')
+print("______")
 print(AZ3)
-print('______')
+print("______")
 print()
 
 #  4. ones():
@@ -69,13 +77,13 @@ print()
 AZ1 = np.ones(5)
 AZ2 = np.ones((2, 4), dtype=int)
 AZ3 = np.ones((2, 3, 4), dtype=int)
-print('4. ones() function')
+print("4. ones() function")
 print(AZ1)
-print('______')
+print("______")
 print(AZ2)
-print('______')
+print("______")
 print(AZ3)
-print('______') 
+print("______")
 print()
 
 # We also have another function that works like zeros() and ones() - empty(). This function creates a new uninitialized array. I nstaed of filling the array with either zeros or ones, it fills them with random values.
@@ -91,9 +99,9 @@ print(LIN2)
 # 7. Eye():
 
 Matrix1 = np.eye(10)
-Matrix2 = np.eye(3,3, k=1)
-Matrix3 = np.eye(3,3, k=-1)
-Matrix4 = np.eye(3,3, k=-1, dtype=int)
+Matrix2 = np.eye(3, 3, k=1)
+Matrix3 = np.eye(3, 3, k=-1)
+Matrix4 = np.eye(3, 3, k=-1, dtype=int)
 Matrix5 = np.eye(10, 5)
 
 print(Matrix1)
@@ -109,25 +117,25 @@ Identity_Matrix = np.identity(5, dtype=int)
 print(Identity_Matrix)
 
 # Numpy Random Module
-    # rand(): Creates an array of the given shape and populate it with random samples from a uniform distribution over [0,1]
+# rand(): Creates an array of the given shape and populate it with random samples from a uniform distribution over [0,1]
 
-rand = np.random.rand(4,5)
+rand = np.random.rand(4, 5)
 print(rand)
 
-    #randn(): Creates array of specified shape and fils it with random values as per standard normal distribution
+# randn(): Creates array of specified shape and fils it with random values as per standard normal distribution
 
 randn = np.random.randn(5, 2)
 print(randn)
 
-    # ranf(): Creates array of specified shape and fils it with random floats in the half open interval [0.0, 1.0]
+# ranf(): Creates array of specified shape and fils it with random floats in the half open interval [0.0, 1.0]
 
 ranf = np.random.ranf(5)
 print(ranf)
 
-    # randint(): Creates array of specified shape and fils it with random integers from low to high.
-    #           If high is not mentioned, then interval will be [0, low]
+# randint(): Creates array of specified shape and fils it with random integers from low to high.
+#           If high is not mentioned, then interval will be [0, low]
 
-randint = np.random.randint(low=4, high=10, size=(3,4))
+randint = np.random.randint(low=4, high=10, size=(3, 4))
 print(randint)
 
 """__Numpy Array Attributes__

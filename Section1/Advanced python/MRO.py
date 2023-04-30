@@ -1,4 +1,4 @@
-'''
+"""
     MRO (Method Resolution Order) is the order in which Python looks for methods and attributes in a hierarchy of classes. When a method or 
     ttribute is called on an object, Python searches for that method or attribute in the object's class, and then in the classes of all its 
     ancestors in the inheritance hierarchy.
@@ -57,16 +57,18 @@ D.foo
 B.foo
 C.foo
 A.foo
-'''
+"""
 
 
 class P:
     pass
 
+
 class C(P):
     pass
 
-print(C.mro()) # OUTPUT: [<class '__main__.C'>, <class '__main__.P'>, <class 'object'>]
+
+print(C.mro())  # OUTPUT: [<class '__main__.C'>, <class '__main__.P'>, <class 'object'>]
 
 # Explain < class 'object' > which is in the output above.
 
@@ -80,10 +82,7 @@ print(C.mro()) # OUTPUT: [<class '__main__.C'>, <class '__main__.P'>, <class 'ob
 # Since every class is ultimately derived from object, it means that all classes have access to these fundamental methods. This allows Python to have a consistent and unified object model, which is one of the reasons why Python is so popular and easy to use.
 
 
-
-
-
-'''
+"""
     ==> STUDY THE BELOW also learn more on the super() function
 class A:
     def m1(self):
@@ -103,4 +102,4 @@ class E(D):
         
 e = E()
 e.m1()
-'''
+"""

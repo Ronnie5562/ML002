@@ -2,7 +2,7 @@ class Employer:
     def __init__(self, name):
         self.name = name
         self.age = 17
-        setattr(self, 'position', 'AI engineer')
+        setattr(self, "position", "AI engineer")
 
     def change_name(self, new_name):
         self.name = new_name
@@ -11,8 +11,8 @@ class Employer:
         print(self.name)
 
 
-Ronald = Employer('Ronald')
-Ronald.change_name('Sharon')
+Ronald = Employer("Ronald")
+Ronald.change_name("Sharon")
 Ronald.print_name()
 print(Ronald.__dict__)
 print(type(Ronald).__name__ is Ronald.__class__.__name__)

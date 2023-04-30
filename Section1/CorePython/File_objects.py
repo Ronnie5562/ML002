@@ -36,7 +36,7 @@
 #     W.seek(0)
 #     W.write('H')
 
-#To copy the content in a file and paste it in another file.
+# To copy the content in a file and paste it in another file.
 # with open('test_1.txt', 'r') as RF:
 #     with open('test_cp.txt', 'w') as RFC:
 #         for line in RF:
