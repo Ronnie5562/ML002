@@ -12,6 +12,7 @@ f = ZipFile("files.zip", 'w', ZIP_DEFLATED)
 # Once we create ZipFile object,we can add files by using write() method.
 
 f.write('test.py')
+f.write('test_1.txt')
 # The zipfile in this directory was created with the code above. It contains a copy of test.py which is also a file in this directory.
 f.close()
 print('The zipfile (files.zip) was successfully created!!!!!')
