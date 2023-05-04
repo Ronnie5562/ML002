@@ -13,4 +13,4 @@ X = np.hstack((np.ones((100, 1)), X))
 y_pred = np.dot(X, theta)
 
 # Print the predicted values
-print(y_pred)
+print(y_pred)  
