@@ -44,3 +44,18 @@ A = np.linspace(-30, 30, 40)
 B = np.linspace(100, 200, 40)
 C = np.c_[A, B]
 print(C)
+
+
+print('____________________________________________________________\n')
+
+
+first, second, third = [1, 2, 3]
+mean_ = np.mean([first, second, third])
+
+new_list = []
+for num in first, second, third:
+    new_list.append(num - mean_)
+
+print('mean:', mean_)
+print('new_list:', new_list)
+print('new_list_mean', np.mean(new_list))
