@@ -35,3 +35,12 @@ new_Array = np.arange(1, 41, 2)
 print(new_Array.reshape((5, 4)))
 new_Array.resize((6, 8))
 print(new_Array)
+
+
+
+print('____________________________________________________________\n')
+
+A = np.linspace(-30, 30, 40)
+B = np.linspace(100, 200, 40)
+C = np.c_[A, B]
+print(C)
