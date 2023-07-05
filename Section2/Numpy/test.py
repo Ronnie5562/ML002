@@ -59,3 +59,4 @@ for num in first, second, third:
 print('mean:', mean_)
 print('new_list:', new_list)
 print('new_list_mean', np.mean(new_list))
+print('Hello')
