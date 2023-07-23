@@ -1,3 +1,3 @@
-import prop_satter as ps
+import prop_satter as prop_s
 
-print(ps.__doc__)
+print(prop_s.__doc__)
