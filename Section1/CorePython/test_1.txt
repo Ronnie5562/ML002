@@ -6,6 +6,8 @@ Angola
 Antigua
 Barbuda
 Argentina
+c is fun
+python is cool
 Armenia
 Aruba
 Australia
