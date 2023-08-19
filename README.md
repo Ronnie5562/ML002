@@ -20,3 +20,6 @@
 - A startup mindset
 - A strong, customer-service ethos
 - An ability to work flexibly (for example at weekends)
+
+## Author
+[Abimbola Ronald](https://www.linkedin.com/in/abimbola-ronald-977299224/)
